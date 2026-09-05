@@ -7,6 +7,7 @@ namespace YxShellCreator.Server.Models
     internal sealed class ResourceConfig
     {
         [JsonProperty("schemaVersion")] public int SchemaVersion { get; set; } = 3;
+        [JsonProperty("language")] public string Language { get; set; } = "zh";
         [JsonProperty("bucketBase")] public int BucketBase { get; set; } = 7500;
         [JsonProperty("maxObjectsPerHouse")] public int MaxObjectsPerHouse { get; set; } = 800;
         [JsonProperty("customInteriorAnchor")] public Transform CustomInteriorAnchor { get; set; } = new Transform();
@@ -200,3 +201,4 @@ namespace YxShellCreator.Server.Models
         [JsonProperty("depth")] public int Depth { get; set; }
     }
 }
+
