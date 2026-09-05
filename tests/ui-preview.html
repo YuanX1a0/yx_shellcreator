@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yx_shellcreator UI preview</title>
+    <style>
+        html, body, iframe { width: 100%; height: 100%; margin: 0; border: 0; overflow: hidden; }
+        body {
+            background:
+                radial-gradient(circle at 62% 36%, rgba(151, 180, 193, .55), transparent 16%),
+                linear-gradient(155deg, #2f4549 0 22%, #617b76 22% 44%, #425356 44% 58%, #242b30 58% 100%);
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px), linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px);
+            background-size: 120px 120px;
+            opacity: .25;
+        }
+        iframe { position: relative; display: block; background: transparent; }
+    </style>
+</head>
+<body>
+    <iframe id="preview" src="../web/index.html"></iframe>
+    <output id="lastPreviewRequest" hidden></output>
+    <script>
+        const params = new URLSearchParams(location.search);
+        const mode = params.get('mode') === 'builder' ? 'builder' : 'manager';
+        const frame = document.getElementById('preview');
+
+        frame.addEventListener('load', async () => {
+            const [config, catalog, houseDocument] = await Promise.all([
+                fetch('../config/config.json').then((response) => response.json()),
+                fetch('../config/catalog.json').then((response) => response.json()),
+                fetch('fixtures/house-v1.json').then((response) => response.json())
+            ]);
+            const houses = [
+                { id: 'house-1', slug: 'ponsonbys_rockford', label: 'Rockford 服装店', presetId: 'current_location', bucket: 7500, entrance: { x: -715.32, y: -155.77, z: 37.42 }, shellModel: null },
+                { id: 'house-2', slug: 'vinewood_apartment', label: 'Vinewood 公寓', presetId: 'high_apartment', bucket: 7501, entrance: { x: -610.54, y: 42.61, z: 43.59 }, shellModel: null },
+                { id: 'house-3', slug: 'motel_room_08', label: '东区汽车旅馆 08', presetId: 'motel_room', bucket: 7502, entrance: { x: 312.65, y: -218.42, z: 54.22 }, shellModel: null },
+                { id: 'house-4', slug: 'custom_studio', label: '私人建筑工作室', presetId: 'empty_builder', bucket: 7503, entrance: { x: 104.43, y: -1281.62, z: 29.26 }, shellModel: null }
+            ];
+            const objects = [
+                { id: 'object-1', model: 'yx_floor_oak', sourceKind: 'placed', hidden: false },
+                { id: 'object-2', model: 'yx_wall_white', sourceKind: 'placed', hidden: false },
+                { id: 'object-3', model: 'yx_door_modern', sourceKind: 'placed', hidden: false, isDoor: true, doorOpen: false },
+                { id: 'object-4', model: 'prop_table_03', sourceKind: 'native', hidden: false },
+                { id: 'object-5', model: 'prop_chair_04a', sourceKind: 'native', hidden: true }
+            ];
+            for (const house of houses) house.accessPoints = [{id:'side-'+house.id, label:'露台入口',
+                entrance:{x:100,y:200,z:30,h:90}, exit:{x:1003,y:-3000,z:-98.5,h:0}}];
+            if (params.get('long') === '1') { houses[0].label = '很长的房屋名称用于测试中文换行与按钮是否被挤出面板'.repeat(3); objects[0].model = 'an_extremely_long_custom_model_name_that_should_wrap_in_the_inspector'; }
+            if (params.get('empty') === '1') { houses.length = 0; objects.length = 0; }
+            const currentHouse = params.get('outside') === '1' ? null : (mode === 'builder' ? houses[3] : houses[0]) || null;
+            let doorPreview = false;
+            // Local preview only: no game or database writes are made by this harness.
+            frame.contentWindow.GetParentResourceName = () => 'yx_shellcreator_preview';
+            const originalFetch = frame.contentWindow.fetch.bind(frame.contentWindow);
+            frame.contentWindow.fetch = async (url, options) => {
+                if (!String(url).startsWith('https://yx_shellcreator_preview/')) return originalFetch(url, options);
+                const operation = String(url).split('/').pop();
+                const payload = JSON.parse(options.body);
+                document.getElementById('lastPreviewRequest').textContent = JSON.stringify({operation, payload});
+                if (operation === 'setEnvironment') {
+                    currentHouse.environment = payload.environment;
+                    frame.contentWindow.postMessage({action:'state', currentHouse}, '*');
+                }
+                if (operation === 'previewDoor') {
+                    doorPreview = !doorPreview;
+                    frame.contentWindow.postMessage({action:'doorPreview', active:doorPreview, objectId:'object-3'}, '*');
+                }
+                if (operation === 'toggleDoorHold') {
+                    objects[2].doorOpen = !objects[2].doorOpen;
+                    frame.contentWindow.postMessage({action:'state',currentHouse,objects}, '*');
+                }
+                if (operation === 'releaseFocus') frame.contentWindow.postMessage({action:'focusState',focused:false}, '*');
+                if (operation === 'accessPoint') {
+                    const house = houses.find(h => h.id === payload.houseId);
+                    if (house && payload.action === 'add') house.accessPoints.push({id:'added-'+Date.now(),label:payload.label,
+                        entrance:{x:150,y:200,z:30,h:0},exit:{x:1003,y:-3000,z:-98.5,h:0}});
+                    if (house && payload.action === 'delete') house.accessPoints = house.accessPoints.filter(p => p.id !== payload.pointId);
+                    frame.contentWindow.postMessage({action:'state',houses,currentHouse}, '*');
+                }
+                if (operation === 'exportHouse') {
+                    houseDocument.house.environment = currentHouse.environment || {weather:'INHERIT',hour:null,minute:null};
+                    frame.contentWindow.postMessage({action:'houseExport', document:houseDocument,
+                        filename:'exports/preview-house.json', saved:true}, '*');
+                }
+                frame.contentWindow.postMessage({action:'operationResult', operation}, '*');
+                return new Response(JSON.stringify({ok:true}), {headers:{'Content-Type':'application/json'}});
+            };
+            if (params.get('closed') === '1') return;
+            frame.contentWindow.postMessage({
+                action: 'open',
+                mode,
+                houses,
+                currentHouse,
+                objects: mode === 'builder' ? objects : [],
+                config,
+                catalog,
+                construction: { active: false, label: '', buildType: '', rotation: 0 },
+                history: { canUndo: true, canRedo: true, undoCount: 4, redoCount: 1, applying: false }
+            }, '*');
+            if (mode === 'builder') {
+                setTimeout(() => frame.contentWindow.postMessage({ action: 'selection', selectedId: 'object-3' }, '*'), 80);
+            }
+        });
+    </script>
+</body>
+</html>

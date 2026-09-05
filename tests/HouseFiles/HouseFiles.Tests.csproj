@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../server/Models/Contracts.cs" Link="Contracts.cs" />
+    <Compile Include="../../server/Services/HouseFileCodec.cs" Link="HouseFileCodec.cs" />
+    <Compile Include="../../server/Services/HousePassages.cs" Link="HousePassages.cs" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+</Project>

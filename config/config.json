@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 3,
+  "bucketBase": 7500,
+  "maxObjectsPerHouse": 800,
+  "drawDistance": 30.0,
+  "interactDistance": 1.8,
+  "entryLoading": {
+    "minimumDurationMs": 1500,
+    "objectSettleMs": 500,
+    "collisionTimeoutMs": 3500,
+    "preloadModelLimit": 128,
+    "spawnBatchSize": 16,
+    "fadeOutMs": 300,
+    "fadeInMs": 300
+  },
+  "doors": {
+    "contactDistance": 0.65,
+    "animationSpeed": 2.8,
+    "closeSpeed": 0.65,
+    "defaultOpenAngle": 90.0
+  },
+  "freecam": {
+    "speed": 4.5,
+    "fastMultiplier": 3.0,
+    "slowMultiplier": 0.25,
+    "lookSensitivity": 8.0,
+    "objectSpawnDistance": 3.0
+  },
+  "rotationSnap": {
+    "preferredStep": 45.0,
+    "threshold": 7.0
+  },
+  "commands": {
+    "manager": "shellcreator",
+    "builder": "yxbuild",
+    "leave": "yxleave"
+  },
+  "keys": {
+    "manager": "F6",
+    "builder": "F7",
+    "panel": "F2"
+  },
+  "customInteriorAnchor": {
+    "x": 1000.0,
+    "y": -3000.0,
+    "z": -100.0,
+    "h": 0.0
+  },
+  "emptyFoundation": {
+    "model": "stt_prop_stunt_bblock_huge_01",
+    "offset": { "x": 0.0, "y": 0.0, "z": -1.15 },
+    "rotation": { "x": 0.0, "y": 0.0, "z": 0.0 }
+  },
+  "emptyBuild": {
+    "gridSize": 2.5,
+    "gridExtent": 25.0,
+    "maxBuildRadius": 25.0,
+    "surfaceOffset": 0.0,
+    "camera": {
+      "distance": 22.0,
+      "minDistance": 8.0,
+      "maxDistance": 42.0,
+      "pitch": -55.0,
+      "minPitch": -72.0,
+      "maxPitch": -38.0,
+      "yaw": 45.0,
+      "fov": 42.0,
+      "panSpeed": 9.0,
+      "zoomSpeed": 18.0,
+      "wheelStep": 2.0,
+      "lookSensitivity": 6.0
+    }
+  },
+  "interiors": [
+    {
+      "id": "current_location",
+      "label": "当前位置原生地图房产",
+      "type": "world",
+      "description": "把提交时人物所在的 GTA 原版地图位置直接作为独立房产，不生成 Shell；适合服装店、办公室等原生室内。新建或从其他模板切换到此模板时都会采集人物当前位置。",
+      "spawn": { "x": 0.0, "y": 0.0, "z": 0.0, "h": 0.0 },
+      "exit": { "x": 0.0, "y": 0.0, "z": 0.0, "h": 0.0 }
+    },
+    {
+      "id": "low_apartment",
+      "label": "低端公寓",
+      "type": "builtin",
+      "description": "GTA V 原生小型公寓，不需要额外地图资源。",
+      "spawn": { "x": 266.08, "y": -1007.42, "z": -101.01, "h": 357.0 },
+      "exit": { "x": 266.08, "y": -1007.42, "z": -101.01, "h": 357.0 }
+    },
+    {
+      "id": "motel_room",
+      "label": "汽车旅馆",
+      "type": "builtin",
+      "description": "GTA V 原生旅馆房间，不需要额外地图资源。",
+      "spawn": { "x": 151.35, "y": -1007.72, "z": -99.0, "h": 340.0 },
+      "exit": { "x": 151.35, "y": -1007.72, "z": -99.0, "h": 340.0 }
+    },
+    {
+      "id": "mid_apartment",
+      "label": "中端公寓",
+      "type": "builtin",
+      "description": "GTA V 原生中型公寓，不需要额外地图资源。",
+      "spawn": { "x": 346.52, "y": -1012.70, "z": -99.20, "h": 3.0 },
+      "exit": { "x": 346.52, "y": -1012.70, "z": -99.20, "h": 3.0 }
+    },
+    {
+      "id": "high_apartment",
+      "label": "高端公寓",
+      "type": "builtin",
+      "description": "GTA V 原生高端公寓，不需要额外地图资源。",
+      "spawn": { "x": -786.87, "y": 315.76, "z": 217.64, "h": 270.0 },
+      "exit": { "x": -786.87, "y": 315.76, "z": 217.64, "h": 270.0 }
+    },
+    {
+      "id": "executive_apartment_1",
+      "label": "行政公寓 A · 现代",
+      "type": "builtin",
+      "description": "GTA V 原生行政公寓一号，现代风格；进入后可继续添加物件，并可接管能独立命中的原生家具。",
+      "ipls": ["apa_v_mp_h_01_a"],
+      "spawn": { "x": -787.78, "y": 334.92, "z": 215.84, "h": 270.0 },
+      "exit": { "x": -787.78, "y": 334.92, "z": 215.84, "h": 270.0 }
+    },
+    {
+      "id": "executive_apartment_2",
+      "label": "行政公寓 B · 深色",
+      "type": "builtin",
+      "description": "GTA V 原生行政公寓二号，深色风格；不依赖第三方 Shell 资源。",
+      "ipls": ["apa_v_mp_h_06_b"],
+      "spawn": { "x": -773.23, "y": 322.83, "z": 194.89, "h": 180.0 },
+      "exit": { "x": -773.23, "y": 322.83, "z": 194.89, "h": 180.0 }
+    },
+    {
+      "id": "executive_apartment_3",
+      "label": "行政公寓 C · 利落",
+      "type": "builtin",
+      "description": "GTA V 原生行政公寓三号，利落风格；不依赖第三方 Shell 资源。",
+      "ipls": ["apa_v_mp_h_04_c"],
+      "spawn": { "x": -787.78, "y": 334.92, "z": 186.11, "h": 270.0 },
+      "exit": { "x": -787.78, "y": 334.92, "z": 186.11, "h": 270.0 }
+    },
+    {
+      "id": "empty_builder",
+      "label": "空白建造空间",
+      "type": "empty",
+      "description": "生成基础平台，并使用类似模拟人生的斜俯视网格铺地板、搭墙面和放置门。",
+      "spawn": { "x": 1000.0, "y": -3000.0, "z": -98.55, "h": 0.0 },
+      "exit": { "x": 1000.0, "y": -3000.0, "z": -98.55, "h": 0.0 }
+    },
+    {
+      "id": "custom_shell",
+      "label": "自定义 Shell 模型",
+      "type": "shell",
+      "description": "输入已经由其他资源 stream 的 Shell 模型名；本资源不会强制依赖该资源。",
+      "spawn": { "x": 1000.0, "y": -3000.0, "z": -99.0, "h": 0.0 },
+      "exit": { "x": 1000.0, "y": -3000.0, "z": -99.0, "h": 0.0 }
+    }
+  ]
+}

@@ -1,0 +1,2815 @@
+{
+  "schemaVersion": 2,
+  "categories": [
+    {
+      "id": "construction",
+      "label": "建筑"
+    },
+    {
+      "id": "doors",
+      "label": "可开关门"
+    },
+    {
+      "id": "structures",
+      "label": "大型结构"
+    },
+    {
+      "id": "living-room",
+      "label": "客厅"
+    },
+    {
+      "id": "bedroom",
+      "label": "卧室"
+    },
+    {
+      "id": "kitchen",
+      "label": "厨房"
+    },
+    {
+      "id": "bathroom",
+      "label": "卫浴"
+    },
+    {
+      "id": "garden",
+      "label": "户外"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-prop_toilet_brush_01",
+      "model": "prop_toilet_brush_01",
+      "label": "toilet brush 01",
+      "category": "bathroom",
+      "group": "brush"
+    },
+    {
+      "id": "item-p_int_jewel_mirror",
+      "model": "p_int_jewel_mirror",
+      "label": "int jewel mirror",
+      "category": "bathroom",
+      "group": "mirror"
+    },
+    {
+      "id": "item-prop_toilet_roll_01",
+      "model": "prop_toilet_roll_01",
+      "label": "toilet roll 01",
+      "category": "bathroom",
+      "group": "paper"
+    },
+    {
+      "id": "item-prop_toilet_roll_02",
+      "model": "prop_toilet_roll_02",
+      "label": "toilet roll 02",
+      "category": "bathroom",
+      "group": "paper"
+    },
+    {
+      "id": "item-prop_toilet_roll_05",
+      "model": "prop_toilet_roll_05",
+      "label": "toilet roll 05",
+      "category": "bathroom",
+      "group": "paper"
+    },
+    {
+      "id": "item-v_res_mbath",
+      "model": "v_res_mbath",
+      "label": "res mbath",
+      "category": "bathroom",
+      "group": "shower"
+    },
+    {
+      "id": "item-prop_ld_toilet_01",
+      "model": "prop_ld_toilet_01",
+      "label": "ld toilet 01",
+      "category": "bathroom",
+      "group": "toilet"
+    },
+    {
+      "id": "item-prop_toilet_01",
+      "model": "prop_toilet_01",
+      "label": "toilet 01",
+      "category": "bathroom",
+      "group": "toilet"
+    },
+    {
+      "id": "item-prop_toilet_02",
+      "model": "prop_toilet_02",
+      "label": "toilet 02",
+      "category": "bathroom",
+      "group": "toilet"
+    },
+    {
+      "id": "item-p_shower_towel_s",
+      "model": "p_shower_towel_s",
+      "label": "shower towel s",
+      "category": "bathroom",
+      "group": "towel"
+    },
+    {
+      "id": "item-prop_beach_towel_01",
+      "model": "prop_beach_towel_01",
+      "label": "beach towel 01",
+      "category": "bathroom",
+      "group": "towel"
+    },
+    {
+      "id": "item-prop_ftowel_01",
+      "model": "prop_ftowel_01",
+      "label": "ftowel 01",
+      "category": "bathroom",
+      "group": "towel"
+    },
+    {
+      "id": "item-prop_ftowel_07",
+      "model": "prop_ftowel_07",
+      "label": "ftowel 07",
+      "category": "bathroom",
+      "group": "towel"
+    },
+    {
+      "id": "item-prop_ftowel_08",
+      "model": "prop_ftowel_08",
+      "label": "ftowel 08",
+      "category": "bathroom",
+      "group": "towel"
+    },
+    {
+      "id": "item-prop_tint_towel",
+      "model": "prop_tint_towel",
+      "label": "tint towel",
+      "category": "bathroom",
+      "group": "towel"
+    },
+    {
+      "id": "item-prop_towel_rail_01",
+      "model": "prop_towel_rail_01",
+      "label": "towel rail 01",
+      "category": "bathroom",
+      "group": "towel"
+    },
+    {
+      "id": "item-prop_towel_rail_02",
+      "model": "prop_towel_rail_02",
+      "label": "towel rail 02",
+      "category": "bathroom",
+      "group": "towel"
+    },
+    {
+      "id": "item-prop_towel_shelf_01",
+      "model": "prop_towel_shelf_01",
+      "label": "towel shelf 01",
+      "category": "bathroom",
+      "group": "towel"
+    },
+    {
+      "id": "item-bkr_prop_prtmachine_dryer_spin",
+      "model": "bkr_prop_prtmachine_dryer_spin",
+      "label": "prop prtmachine dryer spin",
+      "category": "bathroom",
+      "group": "washing"
+    },
+    {
+      "id": "item-prop_rub_washer_01",
+      "model": "prop_rub_washer_01",
+      "label": "rub washer 01",
+      "category": "bathroom",
+      "group": "washing"
+    },
+    {
+      "id": "item-prop_washer_01",
+      "model": "prop_washer_01",
+      "label": "washer 01",
+      "category": "bathroom",
+      "group": "washing"
+    },
+    {
+      "id": "item-prop_washer_02",
+      "model": "prop_washer_02",
+      "label": "washer 02",
+      "category": "bathroom",
+      "group": "washing"
+    },
+    {
+      "id": "item-prop_washer_03",
+      "model": "prop_washer_03",
+      "label": "washer 03",
+      "category": "bathroom",
+      "group": "washing"
+    },
+    {
+      "id": "item-v_ret_fh_dryer",
+      "model": "v_ret_fh_dryer",
+      "label": "ret fh dryer",
+      "category": "bathroom",
+      "group": "washing"
+    },
+    {
+      "id": "item-apa_mp_h_bed_double_08",
+      "model": "apa_mp_h_bed_double_08",
+      "label": "mp h bed double 08",
+      "category": "bedroom",
+      "group": "bed"
+    },
+    {
+      "id": "item-apa_mp_h_bed_double_09",
+      "model": "apa_mp_h_bed_double_09",
+      "label": "mp h bed double 09",
+      "category": "bedroom",
+      "group": "bed"
+    },
+    {
+      "id": "item-apa_mp_h_bed_wide_05",
+      "model": "apa_mp_h_bed_wide_05",
+      "label": "mp h bed wide 05",
+      "category": "bedroom",
+      "group": "bed"
+    },
+    {
+      "id": "item-apa_mp_h_bed_with_table_02",
+      "model": "apa_mp_h_bed_with_table_02",
+      "label": "mp h bed with table 02",
+      "category": "bedroom",
+      "group": "bed"
+    },
+    {
+      "id": "item-apa_mp_h_yacht_bed_01",
+      "model": "apa_mp_h_yacht_bed_01",
+      "label": "mp h yacht bed 01",
+      "category": "bedroom",
+      "group": "bed"
+    },
+    {
+      "id": "item-apa_mp_h_yacht_bed_02",
+      "model": "apa_mp_h_yacht_bed_02",
+      "label": "mp h yacht bed 02",
+      "category": "bedroom",
+      "group": "bed"
+    },
+    {
+      "id": "item-bkr_prop_biker_campbed_01",
+      "model": "bkr_prop_biker_campbed_01",
+      "label": "prop biker campbed 01",
+      "category": "bedroom",
+      "group": "bed"
+    },
+    {
+      "id": "item-ex_prop_exec_bed_01",
+      "model": "ex_prop_exec_bed_01",
+      "label": "prop exec bed 01",
+      "category": "bedroom",
+      "group": "bed"
+    },
+    {
+      "id": "item-gr_prop_bunker_bed_01",
+      "model": "gr_prop_bunker_bed_01",
+      "label": "prop bunker bed 01",
+      "category": "bedroom",
+      "group": "bed"
+    },
+    {
+      "id": "item-p_lestersbed_s",
+      "model": "p_lestersbed_s",
+      "label": "lestersbed s",
+      "category": "bedroom",
+      "group": "bed"
+    },
+    {
+      "id": "item-p_mbbed_s",
+      "model": "p_mbbed_s",
+      "label": "mbbed s",
+      "category": "bedroom",
+      "group": "bed"
+    },
+    {
+      "id": "item-v_res_msonbed_s",
+      "model": "v_res_msonbed_s",
+      "label": "res msonbed s",
+      "category": "bedroom",
+      "group": "bed"
+    },
+    {
+      "id": "item-apa_mp_h_acc_rugwooll_03",
+      "model": "apa_mp_h_acc_rugwooll_03",
+      "label": "mp h acc rugwooll 03",
+      "category": "bedroom",
+      "group": "carpet"
+    },
+    {
+      "id": "item-apa_mp_h_acc_rugwoolm_01",
+      "model": "apa_mp_h_acc_rugwoolm_01",
+      "label": "mp h acc rugwoolm 01",
+      "category": "bedroom",
+      "group": "carpet"
+    },
+    {
+      "id": "item-apa_mp_h_acc_rugwoolm_02",
+      "model": "apa_mp_h_acc_rugwoolm_02",
+      "label": "mp h acc rugwoolm 02",
+      "category": "bedroom",
+      "group": "carpet"
+    },
+    {
+      "id": "item-apa_mp_h_acc_rugwoolm_03",
+      "model": "apa_mp_h_acc_rugwoolm_03",
+      "label": "mp h acc rugwoolm 03",
+      "category": "bedroom",
+      "group": "carpet"
+    },
+    {
+      "id": "item-apa_mp_h_acc_rugwoolm_04",
+      "model": "apa_mp_h_acc_rugwoolm_04",
+      "label": "mp h acc rugwoolm 04",
+      "category": "bedroom",
+      "group": "carpet"
+    },
+    {
+      "id": "item-apa_mp_h_acc_rugwools_01",
+      "model": "apa_mp_h_acc_rugwools_01",
+      "label": "mp h acc rugwools 01",
+      "category": "bedroom",
+      "group": "carpet"
+    },
+    {
+      "id": "item-apa_mp_h_acc_rugwools_03",
+      "model": "apa_mp_h_acc_rugwools_03",
+      "label": "mp h acc rugwools 03",
+      "category": "bedroom",
+      "group": "carpet"
+    },
+    {
+      "id": "item-hei_heist_acc_rughidel_01",
+      "model": "hei_heist_acc_rughidel_01",
+      "label": "heist acc rughidel 01",
+      "category": "bedroom",
+      "group": "carpet"
+    },
+    {
+      "id": "item-hei_heist_acc_rugwooll_01",
+      "model": "hei_heist_acc_rugwooll_01",
+      "label": "heist acc rugwooll 01",
+      "category": "bedroom",
+      "group": "carpet"
+    },
+    {
+      "id": "item-bkr_prop_meth_acetone",
+      "model": "bkr_prop_meth_acetone",
+      "label": "prop meth acetone",
+      "category": "bedroom",
+      "group": "decals"
+    },
+    {
+      "id": "item-ex_office_citymodel_01",
+      "model": "ex_office_citymodel_01",
+      "label": "office citymodel 01",
+      "category": "bedroom",
+      "group": "decals"
+    },
+    {
+      "id": "item-prop_acc_guitar_01",
+      "model": "prop_acc_guitar_01",
+      "label": "acc guitar 01",
+      "category": "bedroom",
+      "group": "decals"
+    },
+    {
+      "id": "item-prop_anim_cash_note",
+      "model": "prop_anim_cash_note",
+      "label": "anim cash note",
+      "category": "bedroom",
+      "group": "decals"
+    },
+    {
+      "id": "item-prop_beware_dog_sign",
+      "model": "prop_beware_dog_sign",
+      "label": "beware dog sign",
+      "category": "bedroom",
+      "group": "decals"
+    },
+    {
+      "id": "item-prop_coke_block_half_a",
+      "model": "prop_coke_block_half_a",
+      "label": "coke block half a",
+      "category": "bedroom",
+      "group": "decals"
+    },
+    {
+      "id": "item-prop_cs_stock_book",
+      "model": "prop_cs_stock_book",
+      "label": "cs stock book",
+      "category": "bedroom",
+      "group": "decals"
+    },
+    {
+      "id": "item-prop_defilied_ragdoll_01",
+      "model": "prop_defilied_ragdoll_01",
+      "label": "defilied ragdoll 01",
+      "category": "bedroom",
+      "group": "decals"
+    },
+    {
+      "id": "item-prop_t_telescope_01b",
+      "model": "prop_t_telescope_01b",
+      "label": "t telescope 01b",
+      "category": "bedroom",
+      "group": "decals"
+    },
+    {
+      "id": "item-prop_weed_01",
+      "model": "prop_weed_01",
+      "label": "weed 01",
+      "category": "bedroom",
+      "group": "decals"
+    },
+    {
+      "id": "item-v_res_fa_candle02",
+      "model": "v_res_fa_candle02",
+      "label": "res fa candle02",
+      "category": "bedroom",
+      "group": "decals"
+    },
+    {
+      "id": "item-v_res_tissues",
+      "model": "v_res_tissues",
+      "label": "res tissues",
+      "category": "bedroom",
+      "group": "decals"
+    },
+    {
+      "id": "item-v_res_tt_cigs01",
+      "model": "v_res_tt_cigs01",
+      "label": "res tt cigs01",
+      "category": "bedroom",
+      "group": "decals"
+    },
+    {
+      "id": "item-v_ret_ml_chips1",
+      "model": "v_ret_ml_chips1",
+      "label": "ret ml chips1",
+      "category": "bedroom",
+      "group": "decals"
+    },
+    {
+      "id": "item-vw_prop_casino_art_bird_01a",
+      "model": "vw_prop_casino_art_bird_01a",
+      "label": "prop casino art bird 01a",
+      "category": "bedroom",
+      "group": "decals"
+    },
+    {
+      "id": "item-vw_prop_vw_colle_pogo",
+      "model": "vw_prop_vw_colle_pogo",
+      "label": "prop vw colle pogo",
+      "category": "bedroom",
+      "group": "decals"
+    },
+    {
+      "id": "item-vw_prop_vw_key_cabinet_01a",
+      "model": "vw_prop_vw_key_cabinet_01a",
+      "label": "prop vw key cabinet 01a",
+      "category": "bedroom",
+      "group": "decals"
+    },
+    {
+      "id": "item-bkr_prop_clubhouse_laptop_01a",
+      "model": "bkr_prop_clubhouse_laptop_01a",
+      "label": "prop clubhouse laptop 01a",
+      "category": "bedroom",
+      "group": "laptop"
+    },
+    {
+      "id": "item-hei_prop_hei_cs_keyboard",
+      "model": "hei_prop_hei_cs_keyboard",
+      "label": "prop hei cs keyboard",
+      "category": "bedroom",
+      "group": "laptop"
+    },
+    {
+      "id": "item-p_cs_laptop_02",
+      "model": "p_cs_laptop_02",
+      "label": "cs laptop 02",
+      "category": "bedroom",
+      "group": "laptop"
+    },
+    {
+      "id": "item-prop_cs_mouse_01",
+      "model": "prop_cs_mouse_01",
+      "label": "cs mouse 01",
+      "category": "bedroom",
+      "group": "laptop"
+    },
+    {
+      "id": "item-prop_laptop_01a",
+      "model": "prop_laptop_01a",
+      "label": "laptop 01a",
+      "category": "bedroom",
+      "group": "laptop"
+    },
+    {
+      "id": "item-prop_speaker_01",
+      "model": "prop_speaker_01",
+      "label": "speaker 01",
+      "category": "bedroom",
+      "group": "laptop"
+    },
+    {
+      "id": "item-prop_speaker_02",
+      "model": "prop_speaker_02",
+      "label": "speaker 02",
+      "category": "bedroom",
+      "group": "laptop"
+    },
+    {
+      "id": "item-prop_speaker_03",
+      "model": "prop_speaker_03",
+      "label": "speaker 03",
+      "category": "bedroom",
+      "group": "laptop"
+    },
+    {
+      "id": "item-prop_speaker_07",
+      "model": "prop_speaker_07",
+      "label": "speaker 07",
+      "category": "bedroom",
+      "group": "laptop"
+    },
+    {
+      "id": "item-prop_white_keyboard",
+      "model": "prop_white_keyboard",
+      "label": "white keyboard",
+      "category": "bedroom",
+      "group": "laptop"
+    },
+    {
+      "id": "item-sm_prop_smug_speaker",
+      "model": "sm_prop_smug_speaker",
+      "label": "sm prop smug speaker",
+      "category": "bedroom",
+      "group": "laptop"
+    },
+    {
+      "id": "item-stt_prop_speakerstack_01a",
+      "model": "stt_prop_speakerstack_01a",
+      "label": "stt prop speakerstack 01a",
+      "category": "bedroom",
+      "group": "laptop"
+    },
+    {
+      "id": "item-v_ind_ss_laptop",
+      "model": "v_ind_ss_laptop",
+      "label": "ind ss laptop",
+      "category": "bedroom",
+      "group": "laptop"
+    },
+    {
+      "id": "item-v_res_pcspeaker",
+      "model": "v_res_pcspeaker",
+      "label": "res pcspeaker",
+      "category": "bedroom",
+      "group": "laptop"
+    },
+    {
+      "id": "item-xm_prop_base_computer_01",
+      "model": "xm_prop_base_computer_01",
+      "label": "prop base computer 01",
+      "category": "bedroom",
+      "group": "laptop"
+    },
+    {
+      "id": "item-xm_prop_x17_computer_01",
+      "model": "xm_prop_x17_computer_01",
+      "label": "prop x17 computer 01",
+      "category": "bedroom",
+      "group": "laptop"
+    },
+    {
+      "id": "item-xm_prop_x17_computer_02",
+      "model": "xm_prop_x17_computer_02",
+      "label": "prop x17 computer 02",
+      "category": "bedroom",
+      "group": "laptop"
+    },
+    {
+      "id": "item-xm_prop_x17_laptop_agent14_01",
+      "model": "xm_prop_x17_laptop_agent14_01",
+      "label": "prop x17 laptop agent14 01",
+      "category": "bedroom",
+      "group": "laptop"
+    },
+    {
+      "id": "item-apa_mp_h_acc_artwalll_01",
+      "model": "apa_mp_h_acc_artwalll_01",
+      "label": "mp h acc artwalll 01",
+      "category": "bedroom",
+      "group": "painting"
+    },
+    {
+      "id": "item-apa_p_h_acc_artwallm_01",
+      "model": "apa_p_h_acc_artwallm_01",
+      "label": "p h acc artwallm 01",
+      "category": "bedroom",
+      "group": "painting"
+    },
+    {
+      "id": "item-apa_p_h_acc_artwalls_03",
+      "model": "apa_p_h_acc_artwalls_03",
+      "label": "p h acc artwalls 03",
+      "category": "bedroom",
+      "group": "painting"
+    },
+    {
+      "id": "item-ex_office_swag_paintings01",
+      "model": "ex_office_swag_paintings01",
+      "label": "office swag paintings01",
+      "category": "bedroom",
+      "group": "painting"
+    },
+    {
+      "id": "item-ex_office_swag_paintings02",
+      "model": "ex_office_swag_paintings02",
+      "label": "office swag paintings02",
+      "category": "bedroom",
+      "group": "painting"
+    },
+    {
+      "id": "item-ex_office_swag_paintings03",
+      "model": "ex_office_swag_paintings03",
+      "label": "office swag paintings03",
+      "category": "bedroom",
+      "group": "painting"
+    },
+    {
+      "id": "item-hei_heist_acc_artgolddisc_01",
+      "model": "hei_heist_acc_artgolddisc_01",
+      "label": "heist acc artgolddisc 01",
+      "category": "bedroom",
+      "group": "painting"
+    },
+    {
+      "id": "item-ng_proc_paintcan01a",
+      "model": "ng_proc_paintcan01a",
+      "label": "ng proc paintcan01a",
+      "category": "bedroom",
+      "group": "painting"
+    },
+    {
+      "id": "item-prop_paint_roller",
+      "model": "prop_paint_roller",
+      "label": "paint roller",
+      "category": "bedroom",
+      "group": "painting"
+    },
+    {
+      "id": "item-prop_paint_spray01b",
+      "model": "prop_paint_spray01b",
+      "label": "paint spray01b",
+      "category": "bedroom",
+      "group": "painting"
+    },
+    {
+      "id": "item-prop_paint_wpaper01",
+      "model": "prop_paint_wpaper01",
+      "label": "paint wpaper01",
+      "category": "bedroom",
+      "group": "painting"
+    },
+    {
+      "id": "item-apa_mp_h_str_shelffloorm_02",
+      "model": "apa_mp_h_str_shelffloorm_02",
+      "label": "mp h str shelffloorm 02",
+      "category": "bedroom",
+      "group": "wardrobe"
+    },
+    {
+      "id": "item-apa_mp_h_str_shelffreel_01",
+      "model": "apa_mp_h_str_shelffreel_01",
+      "label": "mp h str shelffreel 01",
+      "category": "bedroom",
+      "group": "wardrobe"
+    },
+    {
+      "id": "item-apa_mp_h_str_shelfwallm_01",
+      "model": "apa_mp_h_str_shelfwallm_01",
+      "label": "mp h str shelfwallm 01",
+      "category": "bedroom",
+      "group": "wardrobe"
+    },
+    {
+      "id": "item-bkr_prop_gunlocker_01a",
+      "model": "bkr_prop_gunlocker_01a",
+      "label": "prop gunlocker 01a",
+      "category": "bedroom",
+      "group": "wardrobe"
+    },
+    {
+      "id": "item-ch_prop_ch_service_locker_01a",
+      "model": "ch_prop_ch_service_locker_01a",
+      "label": "prop ch service locker 01a",
+      "category": "bedroom",
+      "group": "wardrobe"
+    },
+    {
+      "id": "item-p_cs_locker_01_s",
+      "model": "p_cs_locker_01_s",
+      "label": "cs locker 01 s",
+      "category": "bedroom",
+      "group": "wardrobe"
+    },
+    {
+      "id": "item-v_serv_cupboard_01",
+      "model": "v_serv_cupboard_01",
+      "label": "serv cupboard 01",
+      "category": "bedroom",
+      "group": "wardrobe"
+    },
+    {
+      "id": "item-prop_bush_dead_02",
+      "model": "prop_bush_dead_02",
+      "label": "bush dead 02",
+      "category": "garden",
+      "group": "bush"
+    },
+    {
+      "id": "item-prop_bush_grape_01",
+      "model": "prop_bush_grape_01",
+      "label": "bush grape 01",
+      "category": "garden",
+      "group": "bush"
+    },
+    {
+      "id": "item-prop_bush_lrg_01c_cr",
+      "model": "prop_bush_lrg_01c_cr",
+      "label": "bush lrg 01c cr",
+      "category": "garden",
+      "group": "bush"
+    },
+    {
+      "id": "item-prop_bush_lrg_01c",
+      "model": "prop_bush_lrg_01c",
+      "label": "bush lrg 01c",
+      "category": "garden",
+      "group": "bush"
+    },
+    {
+      "id": "item-prop_bush_lrg_01d",
+      "model": "prop_bush_lrg_01d",
+      "label": "bush lrg 01d",
+      "category": "garden",
+      "group": "bush"
+    },
+    {
+      "id": "item-prop_bush_lrg_01e_cr2",
+      "model": "prop_bush_lrg_01e_cr2",
+      "label": "bush lrg 01e cr2",
+      "category": "garden",
+      "group": "bush"
+    },
+    {
+      "id": "item-prop_bush_lrg_03",
+      "model": "prop_bush_lrg_03",
+      "label": "bush lrg 03",
+      "category": "garden",
+      "group": "bush"
+    },
+    {
+      "id": "item-prop_bush_med_03",
+      "model": "prop_bush_med_03",
+      "label": "bush med 03",
+      "category": "garden",
+      "group": "bush"
+    },
+    {
+      "id": "item-prop_bush_med_05",
+      "model": "prop_bush_med_05",
+      "label": "bush med 05",
+      "category": "garden",
+      "group": "bush"
+    },
+    {
+      "id": "item-prop_bush_med_06",
+      "model": "prop_bush_med_06",
+      "label": "bush med 06",
+      "category": "garden",
+      "group": "bush"
+    },
+    {
+      "id": "item-prop_bush_neat_01",
+      "model": "prop_bush_neat_01",
+      "label": "bush neat 01",
+      "category": "garden",
+      "group": "bush"
+    },
+    {
+      "id": "item-prop_bush_neat_02",
+      "model": "prop_bush_neat_02",
+      "label": "bush neat 02",
+      "category": "garden",
+      "group": "bush"
+    },
+    {
+      "id": "item-prop_bush_neat_03",
+      "model": "prop_bush_neat_03",
+      "label": "bush neat 03",
+      "category": "garden",
+      "group": "bush"
+    },
+    {
+      "id": "item-prop_bush_neat_04",
+      "model": "prop_bush_neat_04",
+      "label": "bush neat 04",
+      "category": "garden",
+      "group": "bush"
+    },
+    {
+      "id": "item-prop_bush_neat_07",
+      "model": "prop_bush_neat_07",
+      "label": "bush neat 07",
+      "category": "garden",
+      "group": "bush"
+    },
+    {
+      "id": "item-prop_bush_neat_08",
+      "model": "prop_bush_neat_08",
+      "label": "bush neat 08",
+      "category": "garden",
+      "group": "bush"
+    },
+    {
+      "id": "item-prop_bush_ornament_01",
+      "model": "prop_bush_ornament_01",
+      "label": "bush ornament 01",
+      "category": "garden",
+      "group": "bush"
+    },
+    {
+      "id": "item-prop_snow_bush_02_a",
+      "model": "prop_snow_bush_02_a",
+      "label": "snow bush 02 a",
+      "category": "garden",
+      "group": "bush"
+    },
+    {
+      "id": "item-ch_prop_ch_cctv_cam_01a",
+      "model": "ch_prop_ch_cctv_cam_01a",
+      "label": "prop ch cctv cam 01a",
+      "category": "garden",
+      "group": "cam"
+    },
+    {
+      "id": "item-v_res_mplatesml",
+      "model": "v_res_mplatesml",
+      "label": "res mplatesml",
+      "category": "garden",
+      "group": "light"
+    },
+    {
+      "id": "item-prop_joshua_tree_02c",
+      "model": "prop_joshua_tree_02c",
+      "label": "joshua tree 02c",
+      "category": "garden",
+      "group": "tree"
+    },
+    {
+      "id": "item-prop_prop_tree_02",
+      "model": "prop_prop_tree_02",
+      "label": "prop tree 02",
+      "category": "garden",
+      "group": "tree"
+    },
+    {
+      "id": "item-prop_snow_tree_03_h",
+      "model": "prop_snow_tree_03_h",
+      "label": "snow tree 03 h",
+      "category": "garden",
+      "group": "tree"
+    },
+    {
+      "id": "item-prop_tree_birch_04",
+      "model": "prop_tree_birch_04",
+      "label": "tree birch 04",
+      "category": "garden",
+      "group": "tree"
+    },
+    {
+      "id": "item-prop_tree_birch_05",
+      "model": "prop_tree_birch_05",
+      "label": "tree birch 05",
+      "category": "garden",
+      "group": "tree"
+    },
+    {
+      "id": "item-prop_tree_cypress_01",
+      "model": "prop_tree_cypress_01",
+      "label": "tree cypress 01",
+      "category": "garden",
+      "group": "tree"
+    },
+    {
+      "id": "item-prop_tree_eng_oak_01",
+      "model": "prop_tree_eng_oak_01",
+      "label": "tree eng oak 01",
+      "category": "garden",
+      "group": "tree"
+    },
+    {
+      "id": "item-prop_tree_eng_oak_creator",
+      "model": "prop_tree_eng_oak_creator",
+      "label": "tree eng oak creator",
+      "category": "garden",
+      "group": "tree"
+    },
+    {
+      "id": "item-prop_tree_eucalip_01",
+      "model": "prop_tree_eucalip_01",
+      "label": "tree eucalip 01",
+      "category": "garden",
+      "group": "tree"
+    },
+    {
+      "id": "item-prop_tree_fallen_01",
+      "model": "prop_tree_fallen_01",
+      "label": "tree fallen 01",
+      "category": "garden",
+      "group": "tree"
+    },
+    {
+      "id": "item-prop_tree_jacada_02",
+      "model": "prop_tree_jacada_02",
+      "label": "tree jacada 02",
+      "category": "garden",
+      "group": "tree"
+    },
+    {
+      "id": "item-prop_tree_lficus_06",
+      "model": "prop_tree_lficus_06",
+      "label": "tree lficus 06",
+      "category": "garden",
+      "group": "tree"
+    },
+    {
+      "id": "item-prop_tree_log_02",
+      "model": "prop_tree_log_02",
+      "label": "tree log 02",
+      "category": "garden",
+      "group": "tree"
+    },
+    {
+      "id": "item-prop_tree_maple_02",
+      "model": "prop_tree_maple_02",
+      "label": "tree maple 02",
+      "category": "garden",
+      "group": "tree"
+    },
+    {
+      "id": "item-prop_tree_mquite_01",
+      "model": "prop_tree_mquite_01",
+      "label": "tree mquite 01",
+      "category": "garden",
+      "group": "tree"
+    },
+    {
+      "id": "item-prop_tree_olive_01",
+      "model": "prop_tree_olive_01",
+      "label": "tree olive 01",
+      "category": "garden",
+      "group": "tree"
+    },
+    {
+      "id": "item-prop_tree_stump_01",
+      "model": "prop_tree_stump_01",
+      "label": "tree stump 01",
+      "category": "garden",
+      "group": "tree"
+    },
+    {
+      "id": "item-test_tree_cedar_trunk_001",
+      "model": "test_tree_cedar_trunk_001",
+      "label": "test tree cedar trunk 001",
+      "category": "garden",
+      "group": "tree"
+    },
+    {
+      "id": "item-test_tree_forest_trunk_04",
+      "model": "test_tree_forest_trunk_04",
+      "label": "test tree forest trunk 04",
+      "category": "garden",
+      "group": "tree"
+    },
+    {
+      "id": "item-test_tree_forest_trunk_base_01",
+      "model": "test_tree_forest_trunk_base_01",
+      "label": "test tree forest trunk base 01",
+      "category": "garden",
+      "group": "tree"
+    },
+    {
+      "id": "item-apa_mp_h_din_chair_08",
+      "model": "apa_mp_h_din_chair_08",
+      "label": "mp h din chair 08",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-apa_mp_h_din_chair_09",
+      "model": "apa_mp_h_din_chair_09",
+      "label": "mp h din chair 09",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-apa_mp_h_din_chair_12",
+      "model": "apa_mp_h_din_chair_12",
+      "label": "mp h din chair 12",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-apa_mp_h_stn_chairarm_09",
+      "model": "apa_mp_h_stn_chairarm_09",
+      "label": "mp h stn chairarm 09",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-apa_mp_h_stn_chairarm_11",
+      "model": "apa_mp_h_stn_chairarm_11",
+      "label": "mp h stn chairarm 11",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-apa_mp_h_stn_chairarm_12",
+      "model": "apa_mp_h_stn_chairarm_12",
+      "label": "mp h stn chairarm 12",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-apa_mp_h_stn_chairarm_13",
+      "model": "apa_mp_h_stn_chairarm_13",
+      "label": "mp h stn chairarm 13",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-apa_mp_h_stn_chairstool_12",
+      "model": "apa_mp_h_stn_chairstool_12",
+      "label": "mp h stn chairstool 12",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-bkr_prop_biker_boardchair01",
+      "model": "bkr_prop_biker_boardchair01",
+      "label": "prop biker boardchair01",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-bkr_prop_clubhouse_chair_01",
+      "model": "bkr_prop_clubhouse_chair_01",
+      "label": "prop clubhouse chair 01",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-ex_prop_offchair_exec_01",
+      "model": "ex_prop_offchair_exec_01",
+      "label": "prop offchair exec 01",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-gr_prop_highendchair_gr_01a",
+      "model": "gr_prop_highendchair_gr_01a",
+      "label": "prop highendchair gr 01a",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-hei_heist_stn_benchshort",
+      "model": "hei_heist_stn_benchshort",
+      "label": "heist stn benchshort",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-hei_heist_stn_chairarm_06",
+      "model": "hei_heist_stn_chairarm_06",
+      "label": "heist stn chairarm 06",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-hei_prop_hei_skid_chair",
+      "model": "hei_prop_hei_skid_chair",
+      "label": "prop hei skid chair",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-p_dinechair_01_s",
+      "model": "p_dinechair_01_s",
+      "label": "dinechair 01 s",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-prop_chair_01a",
+      "model": "prop_chair_01a",
+      "label": "chair 01a",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-prop_chair_01b",
+      "model": "prop_chair_01b",
+      "label": "chair 01b",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-prop_chair_02",
+      "model": "prop_chair_02",
+      "label": "chair 02",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-prop_chair_03",
+      "model": "prop_chair_03",
+      "label": "chair 03",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-prop_chair_07",
+      "model": "prop_chair_07",
+      "label": "chair 07",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-prop_chair_08",
+      "model": "prop_chair_08",
+      "label": "chair 08",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-prop_chair_09",
+      "model": "prop_chair_09",
+      "label": "chair 09",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-prop_chateau_chair_01",
+      "model": "prop_chateau_chair_01",
+      "label": "chateau chair 01",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-prop_direct_chair_01",
+      "model": "prop_direct_chair_01",
+      "label": "direct chair 01",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-prop_gc_chair02",
+      "model": "prop_gc_chair02",
+      "label": "gc chair02",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-prop_off_chair_04b",
+      "model": "prop_off_chair_04b",
+      "label": "off chair 04b",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-prop_old_deck_chair",
+      "model": "prop_old_deck_chair",
+      "label": "old deck chair",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-prop_old_wood_chair",
+      "model": "prop_old_wood_chair",
+      "label": "old wood chair",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-prop_table_02_chr",
+      "model": "prop_table_02_chr",
+      "label": "table 02 chr",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-prop_table_04_chr",
+      "model": "prop_table_04_chr",
+      "label": "table 04 chr",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-prop_table_05_chr",
+      "model": "prop_table_05_chr",
+      "label": "table 05 chr",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-prop_table_06_chr",
+      "model": "prop_table_06_chr",
+      "label": "table 06 chr",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-prop_table_08_chr",
+      "model": "prop_table_08_chr",
+      "label": "table 08 chr",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-prop_yacht_table_01",
+      "model": "prop_yacht_table_01",
+      "label": "yacht table 01",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-v_corp_bk_chair3",
+      "model": "v_corp_bk_chair3",
+      "label": "corp bk chair3",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-v_corp_cd_chair",
+      "model": "v_corp_cd_chair",
+      "label": "corp cd chair",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-v_ilev_hd_chair",
+      "model": "v_ilev_hd_chair",
+      "label": "ilev hd chair",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-v_res_m_l_chair1",
+      "model": "v_res_m_l_chair1",
+      "label": "res m l chair1",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-v_ret_fh_chair01",
+      "model": "v_ret_fh_chair01",
+      "label": "ret fh chair01",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-xm_base_cia_chair_conf",
+      "model": "xm_base_cia_chair_conf",
+      "label": "base cia chair conf",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-xm_int_lev_sub_chair_01",
+      "model": "xm_int_lev_sub_chair_01",
+      "label": "int lev sub chair 01",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-xm_lab_chairarm_02",
+      "model": "xm_lab_chairarm_02",
+      "label": "lab chairarm 02",
+      "category": "kitchen",
+      "group": "chair"
+    },
+    {
+      "id": "item-prop_chip_fryer",
+      "model": "prop_chip_fryer",
+      "label": "chip fryer",
+      "category": "kitchen",
+      "group": "cooker"
+    },
+    {
+      "id": "item-prop_cooker_03",
+      "model": "prop_cooker_03",
+      "label": "cooker 03",
+      "category": "kitchen",
+      "group": "cooker"
+    },
+    {
+      "id": "item-prop_bar_beerfridge_01",
+      "model": "prop_bar_beerfridge_01",
+      "label": "bar beerfridge 01",
+      "category": "kitchen",
+      "group": "fridge"
+    },
+    {
+      "id": "item-prop_bar_fridge_02",
+      "model": "prop_bar_fridge_02",
+      "label": "bar fridge 02",
+      "category": "kitchen",
+      "group": "fridge"
+    },
+    {
+      "id": "item-prop_bar_fridge_03",
+      "model": "prop_bar_fridge_03",
+      "label": "bar fridge 03",
+      "category": "kitchen",
+      "group": "fridge"
+    },
+    {
+      "id": "item-prop_fridge_01",
+      "model": "prop_fridge_01",
+      "label": "fridge 01",
+      "category": "kitchen",
+      "group": "fridge"
+    },
+    {
+      "id": "item-prop_fridge_03",
+      "model": "prop_fridge_03",
+      "label": "fridge 03",
+      "category": "kitchen",
+      "group": "fridge"
+    },
+    {
+      "id": "item-prop_trailr_fridge",
+      "model": "prop_trailr_fridge",
+      "label": "trailr fridge",
+      "category": "kitchen",
+      "group": "fridge"
+    },
+    {
+      "id": "item-prop_vend_fridge01",
+      "model": "prop_vend_fridge01",
+      "label": "vend fridge01",
+      "category": "kitchen",
+      "group": "fridge"
+    },
+    {
+      "id": "item-v_res_fridgemoda",
+      "model": "v_res_fridgemoda",
+      "label": "res fridgemoda",
+      "category": "kitchen",
+      "group": "fridge"
+    },
+    {
+      "id": "item-v_res_tre_fridge",
+      "model": "v_res_tre_fridge",
+      "label": "res tre fridge",
+      "category": "kitchen",
+      "group": "fridge"
+    },
+    {
+      "id": "item-v_ret_ml_fridge",
+      "model": "v_ret_ml_fridge",
+      "label": "ret ml fridge",
+      "category": "kitchen",
+      "group": "fridge"
+    },
+    {
+      "id": "item-apa_mp_h_bed_chestdrawer_02",
+      "model": "apa_mp_h_bed_chestdrawer_02",
+      "label": "mp h bed chestdrawer 02",
+      "category": "kitchen",
+      "group": "hanging-caninets"
+    },
+    {
+      "id": "item-apa_mp_h_str_sideboardl_06",
+      "model": "apa_mp_h_str_sideboardl_06",
+      "label": "mp h str sideboardl 06",
+      "category": "kitchen",
+      "group": "hanging-caninets"
+    },
+    {
+      "id": "item-apa_mp_h_str_sideboardl_09",
+      "model": "apa_mp_h_str_sideboardl_09",
+      "label": "mp h str sideboardl 09",
+      "category": "kitchen",
+      "group": "hanging-caninets"
+    },
+    {
+      "id": "item-apa_mp_h_str_sideboardl_11",
+      "model": "apa_mp_h_str_sideboardl_11",
+      "label": "mp h str sideboardl 11",
+      "category": "kitchen",
+      "group": "hanging-caninets"
+    },
+    {
+      "id": "item-apa_mp_h_str_sideboardl_13",
+      "model": "apa_mp_h_str_sideboardl_13",
+      "label": "mp h str sideboardl 13",
+      "category": "kitchen",
+      "group": "hanging-caninets"
+    },
+    {
+      "id": "item-apa_mp_h_str_sideboardl_14",
+      "model": "apa_mp_h_str_sideboardl_14",
+      "label": "mp h str sideboardl 14",
+      "category": "kitchen",
+      "group": "hanging-caninets"
+    },
+    {
+      "id": "item-apa_mp_h_str_sideboardm_02",
+      "model": "apa_mp_h_str_sideboardm_02",
+      "label": "mp h str sideboardm 02",
+      "category": "kitchen",
+      "group": "hanging-caninets"
+    },
+    {
+      "id": "item-ex_prop_ex_toolchest_01",
+      "model": "ex_prop_ex_toolchest_01",
+      "label": "prop ex toolchest 01",
+      "category": "kitchen",
+      "group": "hanging-caninets"
+    },
+    {
+      "id": "item-hei_heist_bed_chestdrawer_04",
+      "model": "hei_heist_bed_chestdrawer_04",
+      "label": "heist bed chestdrawer 04",
+      "category": "kitchen",
+      "group": "hanging-caninets"
+    },
+    {
+      "id": "item-hei_heist_str_sideboardl_02",
+      "model": "hei_heist_str_sideboardl_02",
+      "label": "heist str sideboardl 02",
+      "category": "kitchen",
+      "group": "hanging-caninets"
+    },
+    {
+      "id": "item-hei_heist_str_sideboardl_03",
+      "model": "hei_heist_str_sideboardl_03",
+      "label": "heist str sideboardl 03",
+      "category": "kitchen",
+      "group": "hanging-caninets"
+    },
+    {
+      "id": "item-hei_heist_str_sideboardl_04",
+      "model": "hei_heist_str_sideboardl_04",
+      "label": "heist str sideboardl 04",
+      "category": "kitchen",
+      "group": "hanging-caninets"
+    },
+    {
+      "id": "item-hei_heist_str_sideboardl_05",
+      "model": "hei_heist_str_sideboardl_05",
+      "label": "heist str sideboardl 05",
+      "category": "kitchen",
+      "group": "hanging-caninets"
+    },
+    {
+      "id": "item-p_v_43_safe_s",
+      "model": "p_v_43_safe_s",
+      "label": "v 43 safe s",
+      "category": "kitchen",
+      "group": "hanging-caninets"
+    },
+    {
+      "id": "item-prop_cs_bowie_knife",
+      "model": "prop_cs_bowie_knife",
+      "label": "cs bowie knife",
+      "category": "kitchen",
+      "group": "knifes"
+    },
+    {
+      "id": "item-prop_w_me_knife_01",
+      "model": "prop_w_me_knife_01",
+      "label": "w me knife 01",
+      "category": "kitchen",
+      "group": "knifes"
+    },
+    {
+      "id": "item-v_res_mknifeblock",
+      "model": "v_res_mknifeblock",
+      "label": "res mknifeblock",
+      "category": "kitchen",
+      "group": "knifes"
+    },
+    {
+      "id": "item-v_res_mkniferack",
+      "model": "v_res_mkniferack",
+      "label": "res mkniferack",
+      "category": "kitchen",
+      "group": "knifes"
+    },
+    {
+      "id": "item-prop_micro_01",
+      "model": "prop_micro_01",
+      "label": "micro 01",
+      "category": "kitchen",
+      "group": "microwave"
+    },
+    {
+      "id": "item-prop_micro_02",
+      "model": "prop_micro_02",
+      "label": "micro 02",
+      "category": "kitchen",
+      "group": "microwave"
+    },
+    {
+      "id": "item-prop_microwave_1",
+      "model": "prop_microwave_1",
+      "label": "microwave 1",
+      "category": "kitchen",
+      "group": "microwave"
+    },
+    {
+      "id": "item-prop_bar_sink_01",
+      "model": "prop_bar_sink_01",
+      "label": "bar sink 01",
+      "category": "kitchen",
+      "group": "sink"
+    },
+    {
+      "id": "item-prop_sink_02",
+      "model": "prop_sink_02",
+      "label": "sink 02",
+      "category": "kitchen",
+      "group": "sink"
+    },
+    {
+      "id": "item-prop_sink_06",
+      "model": "prop_sink_06",
+      "label": "sink 06",
+      "category": "kitchen",
+      "group": "sink"
+    },
+    {
+      "id": "item-v_ilev_mm_faucet",
+      "model": "v_ilev_mm_faucet",
+      "label": "ilev mm faucet",
+      "category": "kitchen",
+      "group": "sink"
+    },
+    {
+      "id": "item-v_res_mbsink",
+      "model": "v_res_mbsink",
+      "label": "res mbsink",
+      "category": "kitchen",
+      "group": "sink"
+    },
+    {
+      "id": "item-apa_mp_h_din_table_01",
+      "model": "apa_mp_h_din_table_01",
+      "label": "mp h din table 01",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-apa_mp_h_din_table_04",
+      "model": "apa_mp_h_din_table_04",
+      "label": "mp h din table 04",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-apa_mp_h_din_table_06",
+      "model": "apa_mp_h_din_table_06",
+      "label": "mp h din table 06",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-apa_mp_h_tab_coffee_08",
+      "model": "apa_mp_h_tab_coffee_08",
+      "label": "mp h tab coffee 08",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-apa_mp_h_tab_sidelrg_02",
+      "model": "apa_mp_h_tab_sidelrg_02",
+      "label": "mp h tab sidelrg 02",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-apa_mp_h_tab_sidesml_01",
+      "model": "apa_mp_h_tab_sidesml_01",
+      "label": "mp h tab sidesml 01",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-apa_mp_h_yacht_coffee_table_01",
+      "model": "apa_mp_h_yacht_coffee_table_01",
+      "label": "mp h yacht coffee table 01",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-apa_mp_h_yacht_coffee_table_02",
+      "model": "apa_mp_h_yacht_coffee_table_02",
+      "label": "mp h yacht coffee table 02",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-apa_mp_h_yacht_side_table_01",
+      "model": "apa_mp_h_yacht_side_table_01",
+      "label": "mp h yacht side table 01",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-bkr_prop_coke_pallet_01a",
+      "model": "bkr_prop_coke_pallet_01a",
+      "label": "prop coke pallet 01a",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-bkr_prop_fakeid_table",
+      "model": "bkr_prop_fakeid_table",
+      "label": "prop fakeid table",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-bkr_prop_weed_table_01b",
+      "model": "bkr_prop_weed_table_01b",
+      "label": "prop weed table 01b",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-ex_mp_h_din_table_05",
+      "model": "ex_mp_h_din_table_05",
+      "label": "mp h din table 05",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-ex_prop_ex_console_table_01",
+      "model": "ex_prop_ex_console_table_01",
+      "label": "prop ex console table 01",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-hei_heist_din_table_04",
+      "model": "hei_heist_din_table_04",
+      "label": "heist din table 04",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-hei_heist_din_table_06",
+      "model": "hei_heist_din_table_06",
+      "label": "heist din table 06",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-hei_heist_din_table_07",
+      "model": "hei_heist_din_table_07",
+      "label": "heist din table 07",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-prop_fbi3_coffee_table",
+      "model": "prop_fbi3_coffee_table",
+      "label": "fbi3 coffee table",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-prop_pooltable_02",
+      "model": "prop_pooltable_02",
+      "label": "pooltable 02",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-prop_table_01",
+      "model": "prop_table_01",
+      "label": "table 01",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-prop_table_02",
+      "model": "prop_table_02",
+      "label": "table 02",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-prop_table_04",
+      "model": "prop_table_04",
+      "label": "table 04",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-prop_table_05",
+      "model": "prop_table_05",
+      "label": "table 05",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-prop_table_06",
+      "model": "prop_table_06",
+      "label": "table 06",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-prop_table_07",
+      "model": "prop_table_07",
+      "label": "table 07",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-prop_table_08",
+      "model": "prop_table_08",
+      "label": "table 08",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-prop_table_para_comb_01",
+      "model": "prop_table_para_comb_01",
+      "label": "table para comb 01",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-prop_table_para_comb_02",
+      "model": "prop_table_para_comb_02",
+      "label": "table para comb 02",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-prop_table_tennis",
+      "model": "prop_table_tennis",
+      "label": "table tennis",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-prop_tablesmall_01",
+      "model": "prop_tablesmall_01",
+      "label": "tablesmall 01",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-prop_tri_table_01",
+      "model": "prop_tri_table_01",
+      "label": "tri table 01",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-prop_ven_market_table1",
+      "model": "prop_ven_market_table1",
+      "label": "ven market table1",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-prop_yacht_table_03",
+      "model": "prop_yacht_table_03",
+      "label": "yacht table 03",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-v_ret_fh_dinetable",
+      "model": "v_ret_fh_dinetable",
+      "label": "ret fh dinetable",
+      "category": "kitchen",
+      "group": "tables"
+    },
+    {
+      "id": "item-apa_mp_h_floor_lamp_int_08",
+      "model": "apa_mp_h_floor_lamp_int_08",
+      "label": "mp h floor lamp int 08",
+      "category": "living-room",
+      "group": "lamp"
+    },
+    {
+      "id": "item-apa_mp_h_floorlamp_a",
+      "model": "apa_mp_h_floorlamp_a",
+      "label": "mp h floorlamp a",
+      "category": "living-room",
+      "group": "lamp"
+    },
+    {
+      "id": "item-apa_mp_h_lit_lamptablenight_16",
+      "model": "apa_mp_h_lit_lamptablenight_16",
+      "label": "mp h lit lamptablenight 16",
+      "category": "living-room",
+      "group": "lamp"
+    },
+    {
+      "id": "item-bkr_prop_fakeid_desklamp_01a",
+      "model": "bkr_prop_fakeid_desklamp_01a",
+      "label": "prop fakeid desklamp 01a",
+      "category": "living-room",
+      "group": "lamp"
+    },
+    {
+      "id": "item-ch_prop_ch_lamp_ceiling_01a",
+      "model": "ch_prop_ch_lamp_ceiling_01a",
+      "label": "prop ch lamp ceiling 01a",
+      "category": "living-room",
+      "group": "lamp"
+    },
+    {
+      "id": "item-ch_prop_ch_tunnel_worklight",
+      "model": "ch_prop_ch_tunnel_worklight",
+      "label": "prop ch tunnel worklight",
+      "category": "living-room",
+      "group": "lamp"
+    },
+    {
+      "id": "item-h4_prop_battle_lights_wall_l_b",
+      "model": "h4_prop_battle_lights_wall_l_b",
+      "label": "prop battle lights wall l b",
+      "category": "living-room",
+      "group": "lamp"
+    },
+    {
+      "id": "item-hei_heist_lit_lightpendant_01",
+      "model": "hei_heist_lit_lightpendant_01",
+      "label": "heist lit lightpendant 01",
+      "category": "living-room",
+      "group": "lamp"
+    },
+    {
+      "id": "item-prop_beer_neon_01",
+      "model": "prop_beer_neon_01",
+      "label": "beer neon 01",
+      "category": "living-room",
+      "group": "lamp"
+    },
+    {
+      "id": "item-prop_wall_light_08a",
+      "model": "prop_wall_light_08a",
+      "label": "wall light 08a",
+      "category": "living-room",
+      "group": "lamp"
+    },
+    {
+      "id": "item-v_med_examlight",
+      "model": "v_med_examlight",
+      "label": "med examlight",
+      "category": "living-room",
+      "group": "lamp"
+    },
+    {
+      "id": "item-v_res_tre_lightfan",
+      "model": "v_res_tre_lightfan",
+      "label": "res tre lightfan",
+      "category": "living-room",
+      "group": "lamp"
+    },
+    {
+      "id": "item-v_ret_fh_walllighton",
+      "model": "v_ret_fh_walllighton",
+      "label": "ret fh walllighton",
+      "category": "living-room",
+      "group": "lamp"
+    },
+    {
+      "id": "item-vw_prop_casino_art_lampf_01a",
+      "model": "vw_prop_casino_art_lampf_01a",
+      "label": "prop casino art lampf 01a",
+      "category": "living-room",
+      "group": "lamp"
+    },
+    {
+      "id": "item-apa_mp_h_acc_plant_palm_01",
+      "model": "apa_mp_h_acc_plant_palm_01",
+      "label": "mp h acc plant palm 01",
+      "category": "living-room",
+      "group": "plant"
+    },
+    {
+      "id": "item-apa_mp_h_acc_plant_tall_01",
+      "model": "apa_mp_h_acc_plant_tall_01",
+      "label": "mp h acc plant tall 01",
+      "category": "living-room",
+      "group": "plant"
+    },
+    {
+      "id": "item-bkr_prop_weed_bucket_01a",
+      "model": "bkr_prop_weed_bucket_01a",
+      "label": "prop weed bucket 01a",
+      "category": "living-room",
+      "group": "plant"
+    },
+    {
+      "id": "item-ch_prop_ch_planter_01",
+      "model": "ch_prop_ch_planter_01",
+      "label": "prop ch planter 01",
+      "category": "living-room",
+      "group": "plant"
+    },
+    {
+      "id": "item-p_int_jewel_plant_01",
+      "model": "p_int_jewel_plant_01",
+      "label": "int jewel plant 01",
+      "category": "living-room",
+      "group": "plant"
+    },
+    {
+      "id": "item-prop_fbibombplant",
+      "model": "prop_fbibombplant",
+      "label": "fbibombplant",
+      "category": "living-room",
+      "group": "plant"
+    },
+    {
+      "id": "item-prop_plant_int_02a",
+      "model": "prop_plant_int_02a",
+      "label": "plant int 02a",
+      "category": "living-room",
+      "group": "plant"
+    },
+    {
+      "id": "item-prop_pot_plant_02a",
+      "model": "prop_pot_plant_02a",
+      "label": "pot plant 02a",
+      "category": "living-room",
+      "group": "plant"
+    },
+    {
+      "id": "item-vw_prop_casino_art_plant_01a",
+      "model": "vw_prop_casino_art_plant_01a",
+      "label": "prop casino art plant 01a",
+      "category": "living-room",
+      "group": "plant"
+    },
+    {
+      "id": "item-apa_mp_h_stn_sofa_daybed_01",
+      "model": "apa_mp_h_stn_sofa_daybed_01",
+      "label": "mp h stn sofa daybed 01",
+      "category": "living-room",
+      "group": "sofa"
+    },
+    {
+      "id": "item-apa_mp_h_stn_sofa2seat_02",
+      "model": "apa_mp_h_stn_sofa2seat_02",
+      "label": "mp h stn sofa2seat 02",
+      "category": "living-room",
+      "group": "sofa"
+    },
+    {
+      "id": "item-apa_mp_h_stn_sofacorn_01",
+      "model": "apa_mp_h_stn_sofacorn_01",
+      "label": "mp h stn sofacorn 01",
+      "category": "living-room",
+      "group": "sofa"
+    },
+    {
+      "id": "item-apa_mp_h_yacht_sofa_01",
+      "model": "apa_mp_h_yacht_sofa_01",
+      "label": "mp h yacht sofa 01",
+      "category": "living-room",
+      "group": "sofa"
+    },
+    {
+      "id": "item-bkr_prop_clubhouse_sofa_01a",
+      "model": "bkr_prop_clubhouse_sofa_01a",
+      "label": "prop clubhouse sofa 01a",
+      "category": "living-room",
+      "group": "sofa"
+    },
+    {
+      "id": "item-gr_dlc_gr_yacht_props_lounger",
+      "model": "gr_dlc_gr_yacht_props_lounger",
+      "label": "dlc gr yacht props lounger",
+      "category": "living-room",
+      "group": "sofa"
+    },
+    {
+      "id": "item-hei_heist_stn_sofa3seat_01",
+      "model": "hei_heist_stn_sofa3seat_01",
+      "label": "heist stn sofa3seat 01",
+      "category": "living-room",
+      "group": "sofa"
+    },
+    {
+      "id": "item-hei_heist_stn_sofacorn_05",
+      "model": "hei_heist_stn_sofacorn_05",
+      "label": "heist stn sofacorn 05",
+      "category": "living-room",
+      "group": "sofa"
+    },
+    {
+      "id": "item-imp_prop_impexp_sofabed_01a",
+      "model": "imp_prop_impexp_sofabed_01a",
+      "label": "prop impexp sofabed 01a",
+      "category": "living-room",
+      "group": "sofa"
+    },
+    {
+      "id": "item-p_res_sofa_l_s",
+      "model": "p_res_sofa_l_s",
+      "label": "res sofa l s",
+      "category": "living-room",
+      "group": "sofa"
+    },
+    {
+      "id": "item-p_v_med_p_sofa_s",
+      "model": "p_v_med_p_sofa_s",
+      "label": "v med p sofa s",
+      "category": "living-room",
+      "group": "sofa"
+    },
+    {
+      "id": "item-prop_bench_01a",
+      "model": "prop_bench_01a",
+      "label": "bench 01a",
+      "category": "living-room",
+      "group": "sofa"
+    },
+    {
+      "id": "item-prop_yaught_sofa_01",
+      "model": "prop_yaught_sofa_01",
+      "label": "yaught sofa 01",
+      "category": "living-room",
+      "group": "sofa"
+    },
+    {
+      "id": "item-v_tre_sofa_mess_b_s",
+      "model": "v_tre_sofa_mess_b_s",
+      "label": "tre sofa mess b s",
+      "category": "living-room",
+      "group": "sofa"
+    },
+    {
+      "id": "item-xm_lab_sofa_01",
+      "model": "xm_lab_sofa_01",
+      "label": "lab sofa 01",
+      "category": "living-room",
+      "group": "sofa"
+    },
+    {
+      "id": "item-apa_mp_h_str_avunits_01",
+      "model": "apa_mp_h_str_avunits_01",
+      "label": "mp h str avunits 01",
+      "category": "living-room",
+      "group": "tv"
+    },
+    {
+      "id": "item-ba_prop_battle_dj_deck_01a",
+      "model": "ba_prop_battle_dj_deck_01a",
+      "label": "ba prop battle dj deck 01a",
+      "category": "living-room",
+      "group": "tv"
+    },
+    {
+      "id": "item-bkr_prop_clubhouse_jukebox_01a",
+      "model": "bkr_prop_clubhouse_jukebox_01a",
+      "label": "prop clubhouse jukebox 01a",
+      "category": "living-room",
+      "group": "tv"
+    },
+    {
+      "id": "item-bkr_prop_clubhouse_jukebox_01b",
+      "model": "bkr_prop_clubhouse_jukebox_01b",
+      "label": "prop clubhouse jukebox 01b",
+      "category": "living-room",
+      "group": "tv"
+    },
+    {
+      "id": "item-bkr_prop_clubhouse_jukebox_02a",
+      "model": "bkr_prop_clubhouse_jukebox_02a",
+      "label": "prop clubhouse jukebox 02a",
+      "category": "living-room",
+      "group": "tv"
+    },
+    {
+      "id": "item-bkr_prop_weed_fan_floor_01a",
+      "model": "bkr_prop_weed_fan_floor_01a",
+      "label": "prop weed fan floor 01a",
+      "category": "living-room",
+      "group": "tv"
+    },
+    {
+      "id": "item-ch_prop_arcade_claw_01a",
+      "model": "ch_prop_arcade_claw_01a",
+      "label": "prop arcade claw 01a",
+      "category": "living-room",
+      "group": "tv"
+    },
+    {
+      "id": "item-ex_office_swag_electronic",
+      "model": "ex_office_swag_electronic",
+      "label": "office swag electronic",
+      "category": "living-room",
+      "group": "tv"
+    },
+    {
+      "id": "item-ex_prop_ex_tv_flat_01",
+      "model": "ex_prop_ex_tv_flat_01",
+      "label": "prop ex tv flat 01",
+      "category": "living-room",
+      "group": "tv"
+    },
+    {
+      "id": "item-ex_prop_tv_settop_remote",
+      "model": "ex_prop_tv_settop_remote",
+      "label": "prop tv settop remote",
+      "category": "living-room",
+      "group": "tv"
+    },
+    {
+      "id": "item-hei_prop_hei_carrier_disp_01",
+      "model": "hei_prop_hei_carrier_disp_01",
+      "label": "prop hei carrier disp 01",
+      "category": "living-room",
+      "group": "tv"
+    },
+    {
+      "id": "item-prop_arcade_01",
+      "model": "prop_arcade_01",
+      "label": "arcade 01",
+      "category": "living-room",
+      "group": "tv"
+    },
+    {
+      "id": "item-prop_cs_cctv",
+      "model": "prop_cs_cctv",
+      "label": "cs cctv",
+      "category": "living-room",
+      "group": "tv"
+    },
+    {
+      "id": "item-prop_microphone_02",
+      "model": "prop_microphone_02",
+      "label": "microphone 02",
+      "category": "living-room",
+      "group": "tv"
+    },
+    {
+      "id": "item-prop_monitor_01c",
+      "model": "prop_monitor_01c",
+      "label": "monitor 01c",
+      "category": "living-room",
+      "group": "tv"
+    },
+    {
+      "id": "item-v_res_vacuum",
+      "model": "v_res_vacuum",
+      "label": "res vacuum",
+      "category": "living-room",
+      "group": "tv"
+    },
+    {
+      "id": "build-yx-floor-oak",
+      "model": "yx_floor_oak",
+      "label": "橡木拼板地板 2.5m",
+      "category": "construction",
+      "group": "floor",
+      "buildType": "floor",
+      "snapMode": "cell",
+      "moduleSize": 2.5,
+      "snap": 2.5,
+      "rotationStep": 90,
+      "defaultRotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "zOffset": 0
+    },
+    {
+      "id": "build-yx-floor-tile",
+      "model": "yx_floor_tile",
+      "label": "浅色瓷砖地板 2.5m",
+      "category": "construction",
+      "group": "floor",
+      "buildType": "floor",
+      "snapMode": "cell",
+      "moduleSize": 2.5,
+      "snap": 2.5,
+      "rotationStep": 90,
+      "defaultRotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "zOffset": 0
+    },
+    {
+      "id": "build-yx-wall-white",
+      "model": "yx_wall_white",
+      "label": "白色室内实墙 2.5m",
+      "category": "construction",
+      "group": "wall",
+      "buildType": "wall",
+      "snapMode": "edge",
+      "moduleSize": 2.5,
+      "snap": 2.5,
+      "rotationStep": 90,
+      "defaultRotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "zOffset": 0
+    },
+    {
+      "id": "build-yx-wall-doorway",
+      "model": "yx_wall_doorway",
+      "label": "白色门洞墙 2.5m",
+      "category": "construction",
+      "group": "door",
+      "buildType": "door",
+      "snapMode": "edge",
+      "moduleSize": 2.5,
+      "snap": 2.5,
+      "rotationStep": 90,
+      "defaultRotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "zOffset": 0
+    },
+    {
+      "id": "build-yx-floor-concrete",
+      "model": "yx_floor_concrete",
+      "label": "清水混凝土地板 2.5m",
+      "category": "construction",
+      "group": "floor",
+      "buildType": "floor",
+      "snapMode": "cell",
+      "moduleSize": 2.5,
+      "snap": 2.5,
+      "rotationStep": 90,
+      "continuous": true,
+      "defaultRotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "zOffset": 0
+    },
+    {
+      "id": "build-yx-floor-darkwood",
+      "model": "yx_floor_darkwood",
+      "label": "深色木拼板地板 2.5m",
+      "category": "construction",
+      "group": "floor",
+      "buildType": "floor",
+      "snapMode": "cell",
+      "moduleSize": 2.5,
+      "snap": 2.5,
+      "rotationStep": 90,
+      "continuous": true,
+      "defaultRotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "zOffset": 0
+    },
+    {
+      "id": "build-yx-wall-concrete",
+      "model": "yx_wall_concrete",
+      "label": "清水混凝土实墙 2.5m",
+      "category": "construction",
+      "group": "wall",
+      "buildType": "wall",
+      "snapMode": "edge",
+      "moduleSize": 2.5,
+      "snap": 2.5,
+      "rotationStep": 90,
+      "continuous": true,
+      "defaultRotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "zOffset": 0
+    },
+    {
+      "id": "build-yx-wall-charcoal",
+      "model": "yx_wall_charcoal",
+      "label": "深灰现代实墙 2.5m",
+      "category": "construction",
+      "group": "wall",
+      "buildType": "wall",
+      "snapMode": "edge",
+      "moduleSize": 2.5,
+      "snap": 2.5,
+      "rotationStep": 90,
+      "continuous": true,
+      "defaultRotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "zOffset": 0
+    },
+    {
+      "id": "build-yx-wall-doorway-concrete",
+      "model": "yx_wall_doorway_concrete",
+      "label": "混凝土门洞墙 2.5m",
+      "category": "construction",
+      "group": "door",
+      "buildType": "door",
+      "snapMode": "edge",
+      "moduleSize": 2.5,
+      "snap": 2.5,
+      "rotationStep": 90,
+      "continuous": false,
+      "defaultRotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "zOffset": 0
+    },
+    {
+      "id": "build-yx-door-wood",
+      "model": "yx_door_wood",
+      "label": "橡木室内门",
+      "hiddenFromCatalog": true,
+      "category": "construction",
+      "group": "door",
+      "buildType": "door",
+      "snapMode": "edge",
+      "moduleSize": 2.5,
+      "snap": 2.5,
+      "rotationStep": 90,
+      "continuous": false,
+      "defaultRotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "zOffset": 0,
+      "door": {
+        "openAngle": 90,
+        "hingeSide": "min"
+      }
+    },
+    {
+      "id": "build-yx-door-modern",
+      "model": "yx_door_modern",
+      "label": "深色现代室内门",
+      "hiddenFromCatalog": true,
+      "category": "construction",
+      "group": "door",
+      "buildType": "door",
+      "snapMode": "edge",
+      "moduleSize": 2.5,
+      "snap": 2.5,
+      "rotationStep": 90,
+      "continuous": false,
+      "defaultRotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "zOffset": 0,
+      "door": {
+        "openAngle": -90,
+        "hingeSide": "min"
+      }
+    },
+    {
+      "id": "build-yx-stairs-oak",
+      "model": "yx_stairs_oak",
+      "label": "橡木直跑楼梯 · 层高3m/进深5m",
+      "category": "construction",
+      "group": "stairs",
+      "buildType": "stairs",
+      "snapMode": "cell",
+      "moduleSize": 2.5,
+      "snap": 2.5,
+      "rotationStep": 90,
+      "continuous": false,
+      "defaultRotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "zOffset": 0
+    },
+    {
+      "id": "build-yx-stairs-concrete",
+      "model": "yx_stairs_concrete",
+      "label": "混凝土直跑楼梯 · 层高3m/进深5m",
+      "category": "construction",
+      "group": "stairs",
+      "buildType": "stairs",
+      "snapMode": "cell",
+      "moduleSize": 2.5,
+      "snap": 2.5,
+      "rotationStep": 90,
+      "continuous": false,
+      "defaultRotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "zOffset": 0
+    },
+    {
+      "id": "build-yx-spiral-oak",
+      "model": "yx_spiral_oak",
+      "label": "内置橡木旋转楼梯 · 层高3m/直径3.8m",
+      "category": "construction",
+      "group": "stairs",
+      "buildType": "stairs",
+      "snapMode": "cell",
+      "moduleSize": 2.5,
+      "snap": 2.5,
+      "rotationStep": 45,
+      "continuous": false,
+      "defaultRotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "zOffset": 0
+    },
+    {
+      "id": "build-yx-spiral-concrete",
+      "model": "yx_spiral_concrete",
+      "label": "内置混凝土旋转楼梯 · 层高3m/直径3.8m",
+      "category": "construction",
+      "group": "stairs",
+      "buildType": "stairs",
+      "snapMode": "cell",
+      "moduleSize": 2.5,
+      "snap": 2.5,
+      "rotationStep": 45,
+      "continuous": false,
+      "defaultRotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "zOffset": 0
+    },
+    {
+      "id": "build-gta-club-spiral-stairs",
+      "model": "h4_int_club_spiral_stairs",
+      "label": "原版夜店大型旋梯 · 需对应内饰资源",
+      "category": "construction",
+      "group": "stairs",
+      "buildType": "stairs",
+      "snapMode": "cell",
+      "moduleSize": 2.5,
+      "snap": 2.5,
+      "rotationStep": 45,
+      "continuous": false,
+      "defaultRotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "zOffset": 0
+    },
+    {
+      "id": "build-gta-club-spiral-stairs-small",
+      "model": "h4_int_club_small_stairs_spiral",
+      "label": "原版夜店紧凑旋梯 · 需对应内饰资源",
+      "category": "construction",
+      "group": "stairs",
+      "buildType": "stairs",
+      "snapMode": "cell",
+      "moduleSize": 2.5,
+      "snap": 2.5,
+      "rotationStep": 45,
+      "continuous": false,
+      "defaultRotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "zOffset": 0
+    },
+    {
+      "id": "build-gta-base-spiral-stairs",
+      "model": "vb_ca_spiralstairs",
+      "label": "原版大型金属旋梯 · 需对应地图资源",
+      "category": "construction",
+      "group": "stairs",
+      "buildType": "stairs",
+      "snapMode": "cell",
+      "moduleSize": 2.5,
+      "snap": 2.5,
+      "rotationStep": 45,
+      "continuous": false,
+      "defaultRotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "zOffset": 0
+    },
+    {
+      "id": "door-prop-door-01",
+      "model": "prop_door_01",
+      "label": "GTA 通用室内木门",
+      "category": "doors",
+      "group": "residential",
+      "door": {
+        "openAngle": 90,
+        "hingeSide": "min"
+      }
+    },
+    {
+      "id": "door-prop-motel-door-09",
+      "model": "prop_motel_door_09",
+      "label": "GTA 汽车旅馆房门",
+      "category": "doors",
+      "group": "residential",
+      "door": {
+        "openAngle": 90,
+        "hingeSide": "min"
+      }
+    },
+    {
+      "id": "door-prop-michael-door",
+      "model": "prop_michael_door",
+      "label": "GTA 住宅木门",
+      "category": "doors",
+      "group": "residential",
+      "door": {
+        "openAngle": -90,
+        "hingeSide": "min"
+      }
+    },
+    {
+      "id": "door-prop-magenta-door",
+      "model": "prop_magenta_door",
+      "label": "GTA 洋红装饰门",
+      "category": "doors",
+      "group": "residential",
+      "door": {
+        "openAngle": 90,
+        "hingeSide": "min"
+      }
+    },
+    {
+      "id": "door-prop-ret-door",
+      "model": "prop_ret_door",
+      "label": "GTA 商业内门 01",
+      "category": "doors",
+      "group": "commercial",
+      "door": {
+        "openAngle": 90,
+        "hingeSide": "min"
+      }
+    },
+    {
+      "id": "door-prop-ret-door-02",
+      "model": "prop_ret_door_02",
+      "label": "GTA 商业内门 02",
+      "category": "doors",
+      "group": "commercial",
+      "door": {
+        "openAngle": -90,
+        "hingeSide": "min"
+      }
+    },
+    {
+      "id": "door-prop-ret-door-03",
+      "model": "prop_ret_door_03",
+      "label": "GTA 商业内门 03",
+      "category": "doors",
+      "group": "commercial",
+      "door": {
+        "openAngle": 90,
+        "hingeSide": "min"
+      }
+    },
+    {
+      "id": "door-prop-ret-door-04",
+      "model": "prop_ret_door_04",
+      "label": "GTA 商业内门 04",
+      "category": "doors",
+      "group": "commercial",
+      "door": {
+        "openAngle": -90,
+        "hingeSide": "min"
+      }
+    },
+    {
+      "id": "door-prop-strip-door-01",
+      "model": "prop_strip_door_01",
+      "label": "GTA 夜店室内门",
+      "category": "doors",
+      "group": "commercial",
+      "door": {
+        "openAngle": 90,
+        "hingeSide": "min"
+      }
+    },
+    {
+      "id": "door-prop-ld-jail-door",
+      "model": "prop_ld_jail_door",
+      "label": "GTA 金属牢房门",
+      "category": "doors",
+      "group": "industrial",
+      "door": {
+        "openAngle": 90,
+        "hingeSide": "min"
+      }
+    },
+    {
+      "id": "door-prop-v-door-44",
+      "model": "prop_v_door_44",
+      "label": "GTA 深色公寓门",
+      "category": "doors",
+      "group": "residential",
+      "door": {
+        "openAngle": -90,
+        "hingeSide": "min"
+      }
+    },
+    {
+      "id": "door-ba-club-generic-vip",
+      "model": "ba_prop_door_club_generic_vip",
+      "label": "GTA 夜店 VIP 门",
+      "category": "doors",
+      "group": "commercial",
+      "door": {
+        "openAngle": 90,
+        "hingeSide": "min"
+      }
+    },
+    {
+      "id": "build-stt_prop_stunt_bblock_huge_01",
+      "model": "stt_prop_stunt_bblock_huge_01",
+      "label": "大型特技平台 01",
+      "category": "structures",
+      "group": "structure"
+    },
+    {
+      "id": "build-stt_prop_stunt_bblock_huge_02",
+      "model": "stt_prop_stunt_bblock_huge_02",
+      "label": "大型特技平台 02",
+      "category": "structures",
+      "group": "structure"
+    },
+    {
+      "id": "build-stt_prop_stunt_bblock_huge_03",
+      "model": "stt_prop_stunt_bblock_huge_03",
+      "label": "大型特技平台 03",
+      "category": "structures",
+      "group": "structure"
+    },
+    {
+      "id": "build-stt_prop_stunt_bblock_qp2",
+      "model": "stt_prop_stunt_bblock_qp2",
+      "label": "四分之一坡道",
+      "category": "structures",
+      "group": "structure"
+    },
+    {
+      "id": "build-prop_mp_ramp_03",
+      "model": "prop_mp_ramp_03",
+      "label": "大型坡道",
+      "category": "structures",
+      "group": "structure"
+    },
+    {
+      "id": "build-prop_container_01a",
+      "model": "prop_container_01a",
+      "label": "货运集装箱",
+      "category": "structures",
+      "group": "structure"
+    },
+    {
+      "id": "build-prop_container_ld2",
+      "model": "prop_container_ld2",
+      "label": "旧式集装箱",
+      "category": "structures",
+      "group": "structure"
+    },
+    {
+      "id": "build-lf_house_04_",
+      "model": "lf_house_04_",
+      "label": "整栋房屋 04",
+      "category": "structures",
+      "group": "house"
+    },
+    {
+      "id": "build-lf_house_05_",
+      "model": "lf_house_05_",
+      "label": "整栋房屋 05",
+      "category": "structures",
+      "group": "house"
+    },
+    {
+      "id": "build-lf_house_07_",
+      "model": "lf_house_07_",
+      "label": "整栋房屋 07",
+      "category": "structures",
+      "group": "house"
+    },
+    {
+      "id": "build-lf_house_08_",
+      "model": "lf_house_08_",
+      "label": "整栋房屋 08",
+      "category": "structures",
+      "group": "house"
+    },
+    {
+      "id": "build-lf_house_09_",
+      "model": "lf_house_09_",
+      "label": "整栋房屋 09",
+      "category": "structures",
+      "group": "house"
+    },
+    {
+      "id": "build-lf_house_10_",
+      "model": "lf_house_10_",
+      "label": "整栋房屋 10",
+      "category": "structures",
+      "group": "house"
+    },
+    {
+      "id": "build-lf_house_11_",
+      "model": "lf_house_11_",
+      "label": "整栋房屋 11",
+      "category": "structures",
+      "group": "house"
+    },
+    {
+      "id": "build-lf_house_13_",
+      "model": "lf_house_13_",
+      "label": "整栋房屋 13",
+      "category": "structures",
+      "group": "house"
+    },
+    {
+      "id": "build-lf_house_15_",
+      "model": "lf_house_15_",
+      "label": "整栋房屋 15",
+      "category": "structures",
+      "group": "house"
+    },
+    {
+      "id": "build-lf_house_16_",
+      "model": "lf_house_16_",
+      "label": "整栋房屋 16",
+      "category": "structures",
+      "group": "house"
+    },
+    {
+      "id": "build-lf_house_17_",
+      "model": "lf_house_17_",
+      "label": "整栋房屋 17",
+      "category": "structures",
+      "group": "house"
+    },
+    {
+      "id": "build-lf_house_18_",
+      "model": "lf_house_18_",
+      "label": "整栋房屋 18",
+      "category": "structures",
+      "group": "house"
+    },
+    {
+      "id": "build-lf_house_19_",
+      "model": "lf_house_19_",
+      "label": "整栋房屋 19",
+      "category": "structures",
+      "group": "house"
+    },
+    {
+      "id": "build-lf_house_20_",
+      "model": "lf_house_20_",
+      "label": "整栋房屋 20",
+      "category": "structures",
+      "group": "house"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "format": "yx_shellcreator.house",
+  "version": 1,
+  "coordinateMode": "relative",
+  "exportedAt": "2026-09-05T12:00:00Z",
+  "house": {
+    "label": "晴雨建筑测试房",
+    "presetId": "empty_builder",
+    "presetType": "empty",
+    "shellModel": null,
+    "origin": { "x": 0, "y": 0, "z": -100, "h": 0 },
+    "spawn": { "x": 0, "y": 0, "z": 1, "h": 90 },
+    "exit": { "x": 0, "y": 0, "z": 1, "h": 180 },
+    "environment": { "weather": "RAIN", "hour": 23, "minute": 59 }
+  },
+  "objects": [
+    {
+      "model": "yx_door_modern",
+      "position": { "x": 2.5, "y": 0, "z": 0, "h": 0 },
+      "rotation": { "x": 0, "y": 0, "z": 90 },
+      "sourceKind": "placed",
+      "sourceModelHash": null,
+      "sourcePosition": null,
+      "hidden": false,
+      "doorOpen": true
+    }
+  ],
+  "requiredModels": ["yx_door_modern"]
+}

@@ -1,0 +1,5 @@
+# oxmysql 必须先启动
+ensure oxmysql
+
+# standalone 房屋创建与建造资源
+ensure yx_shellcreator

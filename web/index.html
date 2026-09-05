@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yx_shellcreator</title>
+    <style>html,body { background: transparent !important; }</style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="app" class="hidden" aria-label="yx_shellcreator">
+    <section id="managerView" class="manager-window hidden" aria-label="房屋管理">
+        <header class="topbar">
+            <div class="title-lockup"><h1>房屋</h1><span><b id="houseCount">0</b> 处</span></div>
+            <div class="top-actions">
+                <button id="refreshButton" class="button ghost">刷新</button>
+                <button id="openCurrentBuilder" class="button ghost hidden">装修当前房屋</button>
+                <button id="leaveCurrentHouse" class="button ghost hidden">离开房屋</button>
+                <button id="newHouseButton" class="button primary">新建房屋</button>
+                <button class="icon-button close-button" aria-label="关闭房屋管理">×</button>
+            </div>
+        </header>
+        <div id="managerContent" class="manager-content">
+            <section class="list-panel" aria-label="房产目录">
+                <div class="list-toolbar"><input id="houseSearch" type="search" aria-label="搜索房屋" placeholder="搜索名称、ID 或模板"></div>
+                <div class="list-columns" aria-hidden="true"><span>名称 / ID</span><span>室内模板</span><span>操作</span></div>
+                <div id="houseList" class="house-list"></div>
+            </section>
+            <aside id="houseFormPanel" class="form-panel hidden" aria-label="房屋配置">
+                <div class="section-heading"><h2 id="formTitle">创建房屋</h2><button id="closeHouseForm" class="icon-button" aria-label="收起房屋配置">×</button></div>
+                <p class="muted form-intro">新入口使用提交时人物的位置。</p>
+                <form id="houseForm">
+                    <input id="editingHouseId" type="hidden">
+                    <label class="field" for="houseLabel">名称<input id="houseLabel" name="label" maxlength="80" placeholder="例如 湖畔公寓" required></label>
+                    <label class="field" for="houseSlug">房屋 ID<input id="houseSlug" name="slug" maxlength="50" placeholder="例如 lake_01" pattern="[a-z0-9_-]{2,50}" required><small>2–50 位小写字母、数字、_ 或 -</small></label>
+                    <label class="field" for="presetSelect">室内模板<select id="presetSelect" name="presetId"></select></label>
+                    <p id="presetDescription" class="muted"></p>
+                    <label id="shellModelGroup" class="field hidden" for="shellModel">Shell 模型名<input id="shellModel" name="shellModel" maxlength="100" placeholder="已安装的模型名"></label>
+                    <details id="houseImportTools" class="import-tools">
+                        <summary>从文件导入布局</summary>
+                        <input id="houseImportFile" type="file" accept=".json,application/json" class="hidden">
+                        <div class="toolbar-row"><button id="chooseHouseImport" class="button" type="button">选择数据文件</button><button id="clearHouseImport" class="button ghost" type="button">取消导入</button></div>
+                        <details><summary>粘贴 JSON</summary><textarea id="houseImportText" aria-label="房屋导入 JSON" placeholder="粘贴完整 JSON，最大约 2 MiB" spellcheck="false"></textarea><button id="parseHouseImport" class="button wide" type="button">读取粘贴的数据</button></details>
+                        <p id="houseImportSummary" class="muted" role="status">不选择文件则按模板创建空房屋。</p>
+                    </details>
+                    <label id="updateEntranceGroup" class="checkbox-row hidden"><input id="useCurrentEntrance" type="checkbox"><span>将默认入口移动到人物当前位置</span></label>
+                    <div class="form-actions"><button id="submitHouse" class="button primary wide" type="submit">在当前位置创建</button><button id="resetForm" class="button ghost hidden" type="button">取消编辑</button></div>
+                </form>
+                <section id="managerAccessTools" class="section-block hidden">
+                    <h3>附加出入口</h3><p class="muted">在房屋外添加入口，再进屋设置对应的屋内位置。门模型与传送点相互独立。</p>
+                    <div id="managerAccessList" class="access-list"></div>
+                    <label class="field" for="accessPointLabel">入口名称<input id="accessPointLabel" maxlength="40" placeholder="例如 后门 / 露台"></label>
+                    <button id="addAccessPoint" class="button wide">在人物当前位置添加入口</button>
+                </section>
+            </aside>
+        </div>
+        <footer class="manager-footer"><span><kbd>F6</kbd> 关闭</span><span>入口标记处按 <kbd>E</kbd> 传送，实体门直接走过去推开。</span></footer>
+    </section>
+    <section id="builderView" class="builder-view hidden" aria-label="房屋编辑器">
+        <header class="workspace-bar">
+            <div class="workspace-title"><span>建造</span><h1 id="builderHouseName">室内建造</h1></div>
+            <div class="history-toolbar"><button id="undoObject" class="button ghost" disabled title="撤销 Ctrl+Z">↶ 撤销</button><button id="redoObject" class="button ghost" disabled title="重做 Ctrl+Y">↷ 重做</button></div>
+            <div class="workspace-actions"><button id="releaseFocus" class="button primary">进入场景 / F2</button><button id="builderLeave" class="button ghost">离开房屋</button><button class="button close-button">完成 <kbd>F7</kbd></button></div>
+        </header>
+        <aside class="builder-panel catalog-panel" aria-label="物件库">
+            <div class="catalog-heading"><h2>物件库</h2><span id="catalogResultCount" class="muted">0</span></div>
+            <input id="catalogSearch" type="search" aria-label="搜索物件" placeholder="搜索家具、门、楼梯…">
+            <div class="catalog-filters">
+                <label>类别<select id="categoryTabs" aria-label="物件分类"></select></label>
+            </div>
+            <div id="emptyBuildBanner" class="empty-build-banner hidden">网格建造 · 墙、门与地板自动吸附</div>
+            <div id="catalogGrid" class="catalog-grid"></div>
+            <nav class="catalog-pagination" aria-label="物件库分页"><button id="catalogPrevious" class="button ghost" aria-label="上一页">上一页</button><span id="catalogPageLabel" aria-live="polite">1 / 1</span><button id="catalogNext" class="button ghost" aria-label="下一页">下一页</button></nav>
+            <details class="custom-model"><summary>使用模型名添加</summary><div class="toolbar-row"><input id="customModel" aria-label="自定义模型名" placeholder="输入 GTA 模型名"><button id="addCustomModel" class="button">添加</button></div></details>
+        </aside>
+        <aside class="builder-panel inspector-panel" aria-label="属性面板">
+            <div class="inspector-tabs" role="tablist" aria-label="编辑器设置"><button id="objectTab" role="tab" aria-selected="true" aria-controls="objectPane" data-inspector-tab="object" class="active">物件</button><button id="houseTab" role="tab" aria-selected="false" aria-controls="housePane" data-inspector-tab="house" tabindex="-1">房屋设置</button></div>
+            <div class="inspector-scroll">
+                <section id="objectPane" role="tabpanel" aria-labelledby="objectTab">
+                    <div id="noSelection" class="empty-selection"><h2>选择一个物件</h2><p class="muted">在场景里点击物件，或从左侧添加。</p></div>
+                    <div id="selectionPanel" class="hidden">
+                        <div class="selection-title"><h2 id="selectedLabel">物件</h2><p id="selectedSource" class="muted"></p></div>
+                        <details class="object-identity"><summary>模型与编号</summary><code id="selectedModel">—</code><code id="selectedId">—</code></details>
+                        <section id="doorTools" class="section-block hidden"><div class="section-heading"><h3>平开门</h3><span id="doorPreviewStatus" class="muted">接触推开</span></div><p class="muted">完成建造后，人物向门扇行走即可推开。门不会触发传送。</p><button id="previewDoor" class="button wide">试开门</button><label class="checkbox-row door-hold"><input id="doorHoldOpen" type="checkbox">常开（退出建造后）</label></section>
+                        <section class="rotation-snaps section-block"><h3>旋转</h3><div class="rotation-grid"><button class="button" data-rotation="0">0°</button><button class="button" data-rotation="45">45°</button><button class="button" data-rotation="90">90°</button><button class="button" data-rotation="180">180°</button><button class="button" data-rotation-relative="-45">−45°</button><button class="button" data-rotation-relative="45">+45°</button></div></section>
+                        <div class="inspector-actions section-block"><button id="groundObject" class="button">贴地</button><button id="duplicateObject" class="button">复制</button><button id="saveObject" class="button">立即保存</button><button id="deleteObject" class="button danger-text">删除</button></div>
+                        <details class="gizmo-guide section-block"><summary>场景操作按键</summary><div class="shortcut-grid"><span><kbd>G</kbd> 移动</span><span><kbd>R</kbd> 旋转</span><span><kbd>Del</kbd> 删除</span><span><kbd>WASD</kbd> 飞行</span><span><kbd>E / Q</kbd> 升降</span></div><p class="muted">左键拖动三维坐标轴，按住右键环视。</p></details>
+                    </div>
+                    <details class="object-browser section-block" open><summary>已放置物件 <span id="objectCount">0</span></summary><div id="objectList" class="object-list"></div></details>
+                </section>
+                <section id="housePane" role="tabpanel" aria-labelledby="houseTab" class="hidden">
+                    <section class="environment-tools"><h2>天气与时间</h2><p class="muted">仅对当前房屋内的玩家生效。</p><label class="field" for="houseWeather">天气<select id="houseWeather"><option value="INHERIT">跟随服务器</option><option value="EXTRASUNNY">艳阳</option><option value="CLEAR">晴朗</option><option value="CLOUDS">多云</option><option value="OVERCAST">阴天</option><option value="SMOG">雾霾</option><option value="FOGGY">大雾</option><option value="RAIN">下雨</option><option value="THUNDER">雷雨</option><option value="CLEARING">雨后放晴</option><option value="NEUTRAL">中性</option><option value="SNOW">下雪</option><option value="SNOWLIGHT">小雪</option><option value="BLIZZARD">暴风雪</option><option value="XMAS">圣诞雪天</option><option value="HALLOWEEN">万圣节</option></select></label><div class="environment-time"><label class="checkbox-row"><input id="houseFixedTime" type="checkbox">固定时间</label><input id="houseTime" type="time" value="12:00" aria-label="房屋固定时间" disabled></div><button id="saveHouseEnvironment" class="button wide">保存环境</button></section>
+                    <section class="point-tools section-block"><h2>出入口</h2><p class="muted">自由视角取相机下方 1 米；斜俯视取画面中心地面上方 1 米。外部入口在 F6 房屋配置中添加。</p><div class="toolbar-row"><button id="setSpawnPoint" class="button">设为出生点</button><button id="setExitPoint" class="button">设为默认出口</button></div><div id="houseAccessList" class="access-list"></div></section>
+                    <section class="section-block"><h2>备份与迁移</h2><p class="muted">导出家具、点位、出入口和环境，不包含模型文件。</p><button id="exportHouseData" class="button wide">导出房屋 JSON</button></section>
+                </section>
+            </div>
+            <footer class="panel-footer">物件修改自动保存</footer>
+        </aside>
+    </section>
+    <div id="focusHint" class="focus-hint hidden"></div>
+    <div id="buildToolHint" class="build-tool-hint hidden"><div class="build-tool-title"><strong id="buildToolName">建筑部件</strong><span id="buildToolMeta">旋转 0°</span></div><p><kbd>左键</kbd> 放置　<kbd>R</kbd> 旋转　<kbd>X</kbd> 取消　<kbd>F2</kbd> 返回面板</p></div>
+    <section id="houseExportPanel" class="file-dialog hidden" role="dialog" aria-modal="true" aria-labelledby="houseExportTitle"><div class="file-dialog-card"><div class="section-heading"><h2 id="houseExportTitle">房屋数据已导出</h2><button id="closeHouseExport" class="icon-button" aria-label="关闭导出面板">×</button></div><p id="houseExportLocation"></p><p class="muted">可复制为 UTF-8 的 .json 文件。若游戏不支持下载，请从服务器取文件。</p><textarea id="houseExportText" readonly spellcheck="false" aria-label="导出的房屋 JSON"></textarea><div class="toolbar-row"><button id="copyHouseExport" class="button primary">复制 JSON</button><button id="downloadHouseExport" class="button">下载 JSON</button></div></div></section>
+    <div id="toastContainer" class="toast-container" role="status" aria-live="polite"></div>
+</main>
+    <script src="../client/catalog.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
