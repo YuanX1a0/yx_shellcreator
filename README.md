@@ -1,6 +1,6 @@
 # yx_shellcreator
 
-FiveM standalone 房屋与室内建造资源，使用 JavaScript、C# 和 NUI，不依赖 ESX/QB 框架。
+FiveM standalone 房屋与室内建造资源，使用 JavaScript、C# 和 NUI，不依赖 ESX/QB 框架。可作为房屋与室内系统的基础，为服务器二次开发和功能扩展提供支持。
 
 ## 主要功能
 
