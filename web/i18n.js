@@ -2,8 +2,6 @@
 
 (function (root) {
     const english = {
-        'language.switchToChinese': '中文',
-        'language.switchToEnglish': 'EN',
         'manager.aria': 'House management',
         'manager.title': 'Houses',
         'unit.houses': 'houses',
@@ -299,12 +297,6 @@
             const fallback = rememberDefault(element, 'title');
             element.title = t(element.dataset.i18nTitle, fallback);
         });
-        const languageToggle = document.getElementById('languageToggle');
-        if (languageToggle) {
-            languageToggle.textContent = t('language.switchToChinese', 'EN');
-            languageToggle.setAttribute('aria-label', locale === 'en' ? '切换到中文' : 'Switch to English');
-            languageToggle.title = locale === 'en' ? '切换到中文' : 'Switch to English';
-        }
         document.documentElement.lang = locale === 'en' ? 'en' : 'zh-CN';
     }
 
@@ -313,18 +305,12 @@
         applyStaticTranslations();
     }
 
-    function set(next) {
-        configure(next);
-        window.dispatchEvent(new Event('yx-locale-change'));
-    }
-
     root.YXLocale = {
         get: () => locale,
         isEnglish: () => locale === 'en',
         t,
         interpolate,
         configure,
-        set,
         apply: applyStaticTranslations
     };
 
