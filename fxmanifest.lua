@@ -4,7 +4,7 @@ game 'gta5'
 name 'yx_shellcreator'
 author 'YuanX1a0'
 description 'Standalone house and interior builder using JavaScript, C# and oxmysql'
-version '1.10.1'
+version '1.10.2'
 
 ui_page 'web/index.html'
 
