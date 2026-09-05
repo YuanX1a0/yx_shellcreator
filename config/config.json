@@ -1,5 +1,6 @@
 {
   "schemaVersion": 3,
+  "language": "zh",
   "bucketBase": 7500,
   "maxObjectsPerHouse": 800,
   "drawDistance": 30.0,
@@ -157,3 +158,4 @@
     }
   ]
 }
+
