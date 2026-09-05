@@ -4,13 +4,14 @@ game 'gta5'
 name 'yx_shellcreator'
 author 'YuanX1a0'
 description 'Standalone house and interior builder using JavaScript, C# and oxmysql'
-version '1.10.0'
+version '1.10.1'
 
 ui_page 'web/index.html'
 
 files {
     'web/index.html',
     'web/style.css',
+    'web/i18n.js',
     'web/app.js',
     'client/catalog.js',
     'config/config.json',
@@ -31,3 +32,4 @@ dependencies {
     'oxmysql',
     '/onesync'
 }
+
